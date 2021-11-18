@@ -24,7 +24,7 @@ export default function Home() {
               <a href="#footer" class="nav__links">Contact</a>
             </li>
             <li class="nav__items">
-              <a href="./blog.html" class="nav__links">Blog</a>
+            <a href="/blog" class="nav__links">Blog</a>
             </li>
 
             <img alt="close" class="nav__close" />
