@@ -1,10 +1,10 @@
-import Header from '../../../components/header'
-import Footer from '../../../components/footer'
+import HeaderBlog from '../../../components/headerBlog'
+import FooterBlog from '../../../components/footerBlog'
 
 export default function Post() {
   return (
     <>
-     <Header />
+     <HeaderBlog />
       <div>
         <section className="post" id="main">
           <div className="post__container container">
@@ -14,7 +14,7 @@ export default function Post() {
           </div>
         </section>
       </div>
-      <Footer />
+      <FooterBlog />
     </>
   )
 }

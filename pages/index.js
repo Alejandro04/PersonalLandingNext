@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import Script from 'next/script'
-import Header from '../components/header'
-import Footer from '../components/footer'
+import HeaderBlog from '../components/headerBlog'
+import FooterBlog from '../components/footerBlog'
 
-export default function HomeBlog() {
+export default function Home() {
   return (
     <>
-      <Header />
+      <HeaderBlog />
 
       <div>
         <section className="container about" id="main">
@@ -161,7 +161,7 @@ export default function HomeBlog() {
         </section>
       </div>
 
-      <Footer />
+      <FooterBlog />
       
       <Script
         id="nav-js"

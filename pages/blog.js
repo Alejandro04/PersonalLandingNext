@@ -1,10 +1,10 @@
-import Header from '../components/header'
-import MainBlog from '../components/main'
+import HeaderBlog from '../components/headerBlog'
+import MainBlog from '../components/mainBlog'
 
 export default function Blog() {
   return (
     <>
-      <Header />
+      <HeaderBlog />
       <MainBlog />
     </>
   )
