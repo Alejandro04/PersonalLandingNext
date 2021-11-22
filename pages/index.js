@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Script from 'next/script'
 
 export default function Home() {
   return (
@@ -222,6 +223,14 @@ export default function Home() {
           </div>
         </footer>
       </main>
+      <Script
+        id="nav-js"
+        src="/js/nav.js"
+      />
+       <Script
+        id="slider-js"
+        src="/js/slider.js"
+      />
     </>
   )
 }
