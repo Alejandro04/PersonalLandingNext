@@ -5,7 +5,7 @@ export default function Post() {
   return (
     <>
       <Header />
-      <main>
+      <div>
         <section className="post" id="main">
           <div className="post__container container">
             <section className="items-detail-container" id="post">
@@ -13,7 +13,7 @@ export default function Post() {
             </section>
           </div>
         </section>
-      </main>
+      </div>
       <Footer />
     </>
   )

@@ -4,7 +4,7 @@ import Footer from '../components/footer'
 export default function MainBlog() {
   return (
     <>
-      <main>
+      <div>
         <section className="blog" id="main">
           <div className="blog__container">
             <div className="card-blog">
@@ -123,7 +123,7 @@ export default function MainBlog() {
         </section>
 
        <Footer/>
-      </main>
+      </div>
     </>
   )
 }

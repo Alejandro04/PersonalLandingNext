@@ -8,7 +8,7 @@ export default function HomeBlog() {
     <>
       <Header />
 
-      <main>
+      <div>
         <section className="container about" id="main">
           <h2 className="subtitle">I am a professional who understands your needs</h2>
           <p className="about__paragraph">
@@ -159,7 +159,7 @@ export default function HomeBlog() {
             <Image width="64" height="64" src="/img/rightArrow.svg" alt="right_arrow" className="testimony__arrow" id="after" />
           </div>
         </section>
-      </main>
+      </div>
 
       <Footer />
       
