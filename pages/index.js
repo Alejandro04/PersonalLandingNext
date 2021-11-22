@@ -1,55 +1,12 @@
 import Image from 'next/image'
 import Script from 'next/script'
+import Header from '../components/header'
+import Footer from '../components/footer'
 
-export default function Home() {
+export default function HomeBlog() {
   return (
     <>
-      <header className="hero">
-        <nav className="nav container">
-          <div className="nav__logo">
-            <h2 className="nav__title">
-              alejodev.com
-            </h2>
-          </div>
-          <ul className="nav__link nav__link--menu">
-            <li className="nav__items">
-              <a href="#home" className="nav__links">Home</a>
-            </li>
-            <li className="nav__items">
-              <a href="#main" className="nav__links">Me</a>
-            </li>
-            <li className="nav__items">
-              <a href="#skills" className="nav__links">Skills</a>
-            </li>
-            <li className="nav__items">
-              <a href="#footer" className="nav__links">Contact</a>
-            </li>
-            <li className="nav__items">
-            <a href="/blog" className="nav__links">Blog</a>
-            </li>
-
-            <img alt="close" className="nav__close" />
-          </ul>
-
-          <div className="nav__menu">
-            <img alt="nav" className="nav__img" />
-          </div>
-        </nav>
-
-        <section className="hero__container container" id="home">
-          <h1 className="hero__title">
-            Alejandro Roa
-          </h1>
-          <p className="hero_paragraph">
-            Father of Ana Lucia ❤️
-          </p>
-          <p className="hero_paragraph">
-            Software Engineer
-          </p>
-          <a href="#main" className="cta">Learn more</a>
-        </section>
-
-      </header>
+      <Header />
 
       <main>
         <section className="container about" id="main">
@@ -85,7 +42,7 @@ export default function Home() {
 
             <figure className="knowledge__picture">
               <Image src="/img/pc2.jpg" alt="know" className="knowledge_img"
-               width="800" height="600" />
+                width="800" height="600" />
             </figure>
           </div>
         </section>
@@ -202,32 +159,15 @@ export default function Home() {
             <Image width="64" height="64" src="/img/rightArrow.svg" alt="right_arrow" className="testimony__arrow" id="after" />
           </div>
         </section>
-
-        <footer className="footer" id="footer">
-          <div className="footer__container">
-            <div>
-              <span>+58 04247395321</span>
-            </div>
-            <div>
-              <span> <a href="https://github.com/Alejandro04" target="_blank">Github</a> </span>
-            </div>
-            <div>
-              <span> <a href="https://www.linkedin.com/in/alejandroroa/" target="_blank">Linkedin</a> </span>
-            </div>
-            <div>
-              <span> <a href="https://alejandroroa.medium.com/" target="_blank">Medium</a> </span>
-            </div>
-          </div>
-          <div className="footer__down">
-            © Copyright by 2021 Alejandro Roa
-          </div>
-        </footer>
       </main>
+
+      <Footer />
+      
       <Script
         id="nav-js"
         src="/js/nav.js"
       />
-       <Script
+      <Script
         id="slider-js"
         src="/js/slider.js"
       />
