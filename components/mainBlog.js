@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Footer from '../components/footer'
+import FooterBlog from '../components/footerBlog'
 
 export default function MainBlog() {
   return (
@@ -122,7 +122,7 @@ export default function MainBlog() {
           </div>
         </section>
 
-       <Footer/>
+       <FooterBlog/>
       </div>
     </>
   )
