@@ -156,7 +156,6 @@ body{
     opacity: 0.8;
     background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
     background-size: 10px 10px;
-    margin-bottom: 80px;
 }
 
 .knowledge__container{
@@ -253,7 +252,6 @@ body{
  /*Testimony*/
  .testimony{
      background-color: #e5e5f7;
-     margin-top: 80px;
  }
  .testimony__container{
      display: grid;
@@ -302,6 +300,7 @@ body{
     color: #fff;
     display: inline-block;
     padding: 5px;
+    margin-left: 10px;
 }
 
 .footer{
@@ -317,7 +316,7 @@ body{
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 10px;
-    line-height: 10;
+    line-height: 7;
     font-size: 1.5em;
 }
 
@@ -339,7 +338,7 @@ body{
 /* Card */
 
 .card{
-    background: #f2f2f2;
+    background: #fff;
 }
 
 .card__copy{
