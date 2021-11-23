@@ -11,7 +11,7 @@ export default function NavBlog() {
         </div>
         <ul className="nav__link nav__link--menu">
           <li className="nav__items">
-            <a href="#home" className="nav__links">Home</a>
+            <a href="/" className="nav__links">Home</a>
           </li>
           <li className="nav__items">
             <a href="#main" className="nav__links">Me</a>

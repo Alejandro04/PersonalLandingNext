@@ -69,6 +69,7 @@ body{
 }
 .nav__items{
     list-style: none;
+    z-index: 9999999 !important;
 }
 .nav__links{
     color: #fff;
@@ -114,6 +115,7 @@ body{
     text-decoration: none;
     padding: 13px 30px;
     border-radius: 32px;
+    z-index: 9999999 !important;
 }
 
 /*About*/
