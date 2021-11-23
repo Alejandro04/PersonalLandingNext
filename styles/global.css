@@ -115,7 +115,7 @@ body{
     text-decoration: none;
     padding: 13px 30px;
     border-radius: 32px;
-    z-index: 9999999 !important;
+    z-index: 1 !important;
 }
 
 /*About*/

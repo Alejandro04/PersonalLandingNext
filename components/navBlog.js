@@ -26,11 +26,13 @@ export default function NavBlog() {
             <a href="/blog" className="nav__links">Blog</a>
           </li>
 
-          <Image src="/" alt="close" className="nav__close" layout="fill" />
+          <div className="nav__close">
+            <Image width="30" height="30" src="/img/close.svg"  alt="close" />
+          </div>
         </ul>
 
         <div className="nav__menu">
-          <Image src="/" alt="nav" className="nav__Image" layout="fill" />
+          <Image width="30" height="30" src="/img/nav.svg"  alt="up" className="nav__img" />
         </div>
       </nav>
     </>
