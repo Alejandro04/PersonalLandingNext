@@ -1,5 +1,6 @@
 import HeaderBlog from '../../../components/headerBlog'
 import FooterBlog from '../../../components/footerBlog'
+import Script from 'next/script'
 
 export default function Post() {
   return (
@@ -15,6 +16,14 @@ export default function Post() {
         </section>
       </div>
       <FooterBlog />
+      <Script
+        id="nav-js"
+        src="/js/nav.js"
+      />
+      <Script
+        id="slider-js"
+        src="/js/slider.js"
+      />
     </>
   )
 }

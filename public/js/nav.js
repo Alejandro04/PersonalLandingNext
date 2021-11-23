@@ -5,6 +5,7 @@
 
   if (openBtn && menu && closeNav) {
     openBtn.addEventListener('click', () => {
+      console.log("si")
       menu.classList.add('nav__link--show');
       closeNav.classList.add('nav__link--show');
     })
