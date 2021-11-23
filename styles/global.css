@@ -477,6 +477,7 @@ body{
     flex-wrap: wrap;
     width: 80%;
     margin: auto;
+    margin-bottom: 50px;
 }
 .hashtag{
     padding: 10px;
@@ -487,6 +488,7 @@ body{
 }
 .img-post-container{
     margin: 10px 0;
+    text-align: center;
 }
 .img-post-container img{
     width: 100%;
