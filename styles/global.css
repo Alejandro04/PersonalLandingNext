@@ -59,6 +59,10 @@ body{
 .nav__title{
     font-weight: 300;
 }
+.nav__title a{
+   text-decoration: none;
+   color: #fff;
+}
 .nav__link{
     margin-left: auto;
     padding: 0;

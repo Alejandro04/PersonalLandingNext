@@ -14,7 +14,7 @@ export default function internalNav() {
             <a href="/" className="nav__links">Home</a>
           </li>
           <li className="nav__items">
-            <a href="/blog" className="nav__links">Blog</a>
+            <a href="/es/blog" className="nav__links">Blog</a>
           </li>
 
           <div className="nav__close">

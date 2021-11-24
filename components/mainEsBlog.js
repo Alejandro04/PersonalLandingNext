@@ -6,7 +6,7 @@ export default function MainBlog() {
       <section className="blog" id="main">
         <div className="blog__container">
           <div className="card-blog">
-            <a href="/blog/es/implementar-una-buena-ui">
+            <a href="/es/blog/implementar-una-buena-ui">
               <Image src="/img/pc2.jpg" alt="know" className="knowledge_img"
                 width="800" height="600" />
               <div className="labels-container">
@@ -20,7 +20,7 @@ export default function MainBlog() {
             </a>
           </div>
           <div className="card-blog">
-            <a href="/blog/es/state-management-en-angular-ngxs">
+            <a href="/es/blog/state-management-en-angular-ngxs">
               <Image src="/img/pc2.jpg" alt="know" className="knowledge_img"
                 width="800" height="600" />
               <div className="labels-container">
@@ -32,7 +32,7 @@ export default function MainBlog() {
             </a>
           </div>
           <div className="card-blog">
-            <a href="/blog/es/introduccion-angular-angularmaterial-y-firebase">
+            <a href="/es/blog/introduccion-angular-angularmaterial-y-firebase">
               <Image src="/img/pc2.jpg" alt="know" className="knowledge_img"
                 width="800" height="600" />
               <div class="labels-container">
@@ -44,7 +44,7 @@ export default function MainBlog() {
             </a>
           </div>
           <div className="card-blog">
-            <a href="/blog/es/inputs-y-outputs-en-angular">
+            <a href="/es/blog/inputs-y-outputs-en-angular">
               <Image src="/img/pc2.jpg" alt="know" className="knowledge_img"
                 width="800" height="600" />
               <div class="labels-container">

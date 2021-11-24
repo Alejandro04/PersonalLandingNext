@@ -1,4 +1,4 @@
-import InternalNav from './internalNav'
+import InternalNav from './internalEsNav'
 
 export default function internalHeaderBlog() {
   return (

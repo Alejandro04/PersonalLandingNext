@@ -1,4 +1,4 @@
-import InternalNav from './internalNav'
+import InternalEsNav from './internalEsNav'
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react';
 
@@ -16,7 +16,7 @@ export default function internalHeaderBlog() {
   return (
     <>
       <header className="hero">
-        <InternalNav />
+        <InternalEsNav />
 
         <section className="hero__container container" id="home" layout="fill">
           <h1 className="hero__title">

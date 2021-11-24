@@ -6,7 +6,9 @@ export default function NavBlog() {
       <nav className="nav container">
         <div className="nav__logo">
           <h2 className="nav__title">
-            alejodev.com
+            <a href="/">
+              alejodev.com
+            </a>
           </h2>
         </div>
         <ul className="nav__link nav__link--menu">
@@ -23,16 +25,19 @@ export default function NavBlog() {
             <a href="#footer" className="nav__links">Contact</a>
           </li>
           <li className="nav__items">
-            <a href="/blog" className="nav__links">Blog</a>
+            <a href="/es/blog" className="nav__links">Blog ES</a>
+          </li>
+          <li className="nav__items">
+            <a href="/en/blog" className="nav__links">Blog EN</a>
           </li>
 
           <div className="nav__close">
-            <Image width="30" height="30" src="/img/close.svg"  alt="close" />
+            <Image width="30" height="30" src="/img/close.svg" alt="close" />
           </div>
         </ul>
 
         <div className="nav__menu">
-          <Image width="30" height="30" src="/img/nav.svg"  alt="up" className="nav__img" />
+          <Image width="30" height="30" src="/img/nav.svg" alt="up" className="nav__img" />
         </div>
       </nav>
     </>
