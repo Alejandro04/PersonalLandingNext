@@ -33,6 +33,18 @@ export default function MainBlog() {
             </a>
           </div>
           <div className="card-blog">
+            <a href="/blog/es/introduccion-angular-angularmaterial-firebase">
+              <Image src="/img/pc2.jpg" alt="know" className="knowledge_img"
+                width="800" height="600" />
+              <div class="labels-container">
+                <label class="labelPosts">Introducción: Angular, AngularMaterial y Firebase</label>
+                <p class="labelPostsResume">
+                  Un buen stack de herramientas para desarrollar plataformas
+                </p>
+              </div>
+            </a>
+          </div>
+          <div className="card-blog">
             <a href="/blog/es/inputs-y-outputs-en-angular">
               <Image src="/img/pc2.jpg" alt="know" className="knowledge_img"
                 width="800" height="600" />
