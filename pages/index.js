@@ -93,13 +93,11 @@ export default function Home() {
                   <span className="testimony__course">CEO at Globalesm, Inc</span>
                 </h2>
                 <p className="testimony__review">
-                  "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, magni necessitatibus, cumque harum
-                  suscipit natus error provident beatae facere repellat eum eveniet nobis consequuntur sit dicta placeat
-                  quasi quibusdam quos"
+                  "Alejandro is a good developer who has accompanied us in the creation and maintenance of our Claims Connect product. We feel very comfortable working with him."
                 </p>
               </div>
               <figure className="testimony__picture">
-                <Image width="300" height="300" src="/img/face2.jpg" alt="face" className="testimony__img" />
+                <Image width="300" height="300" src="/img/gioface.jpg" alt="face" className="testimony__img" />
               </figure>
             </section>
             <section className="testimony__body" data-id="2">
@@ -109,13 +107,11 @@ export default function Home() {
                   <span className="testimony__course">CEO at Avanti</span>
                 </h2>
                 <p className="testimony__review">
-                  "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, magni necessitatibus, cumque harum
-                  suscipit natus error provident beatae facere repellat eum eveniet nobis consequuntur sit dicta placeat
-                  quasi quibusdam quos"
+                  "Alejandro developed for us a simple and easy to use shopping cart for our customers, we have a great communication and we are happy to have worked together!"
                 </p>
               </div>
               <figure className="testimony__picture">
-                <Image width="300" height="300" src="/img/face2.jpg" alt="face" className="testimony__img" />
+                <Image width="300" height="300" src="/img/leopoldoface.jpg" alt="face" className="testimony__img" />
               </figure>
             </section>
             <section className="testimony__body" data-id="3">
@@ -135,14 +131,14 @@ export default function Home() {
                 </p>
               </div>
               <figure className="testimony__picture">
-                <Image width="300" height="300" src="/img/face1.jpg" alt="face" className="testimony__img" />
+                <Image width="300" height="300" src="/img/laraface.jpg" alt="face" className="testimony__img" />
               </figure>
             </section>
             <section className="testimony__body" data-id="4">
               <div className="testimony__texts">
                 <h2 className="subtitle">
-                  Karel y Michel
-                  <span className="testimony__course">Co-founders at CargoMe</span>
+                  Karel Alvarez y Michel Adam
+                  <span className="testimony__course">Co-founders at Cat Reflex Solutions</span>
                 </h2>
                 <p className="testimony__review">
                   "Alejandro is very dedicated, his work has been of high quality. We are creating an extension to the
@@ -151,7 +147,8 @@ export default function Home() {
                 </p>
               </div>
               <figure className="testimony__picture">
-                <Image width="300" height="300" src="/img/face3.jpg" alt="face" className="testimony__img" />
+                <Image width="150" height="150" src="/img/michelface.jpg" alt="face" className="testimony__img testimony-two" />
+                <Image width="150" height="150" src="/img/karelface.jpg" alt="face" className="testimony__img" />
               </figure>
             </section>
 
