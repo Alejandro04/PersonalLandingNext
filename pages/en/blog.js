@@ -1,13 +1,13 @@
-import InternalHeaderBlog from '../components/internalHeaderBlog'
-import MainBlog from '../components/mainBlog'
-import FooterBlog from '../components/footerBlog'
+import InternalEnHeaderBlog from '../../components/internalEnHeaderBlog'
+import MainEnBlog from '../../components/mainEnBlog'
+import FooterBlog from '../../components/footerBlog'
 import Script from 'next/script'
 
 export default function Blog() {
   return (
     <>
-      <InternalHeaderBlog />
-      <MainBlog />
+      <InternalEnHeaderBlog />
+      <MainEnBlog />
       <FooterBlog />
       
       <Script

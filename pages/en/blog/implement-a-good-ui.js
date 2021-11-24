@@ -1,11 +1,11 @@
-import InternalEsHeaderPost from '../../../components/internalESHeaderPost'
+import InternalEnHeaderPost from '../../../components/internalEnHeaderPost'
 import FooterBlog from '../../../components/footerBlog'
 import Script from 'next/script'
 
 export default function Post() {
   return (
     <>
-      <InternalEsHeaderPost />
+      <InternalEnHeaderPost />
       <section className="post" id="main">
         <div className="post__container container">
           <section class="items-detail-container" id="post">
