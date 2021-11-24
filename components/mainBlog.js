@@ -32,7 +32,7 @@ export default function MainBlog() {
             </a>
           </div>
           <div className="card-blog">
-            <a href="/blog/es/introduccion-angular-angularmaterial-firebase">
+            <a href="/blog/es/introduccion-angular-angularmaterial-y-firebase">
               <Image src="/img/pc2.jpg" alt="know" className="knowledge_img"
                 width="800" height="600" />
               <div class="labels-container">
