@@ -1,11 +1,11 @@
-import HeaderBlog from '../../../components/headerBlog'
+import InternalHeaderPost from '../../../components/internalHeaderPost'
 import FooterBlog from '../../../components/footerBlog'
 import Script from 'next/script'
 
 export default function Post() {
   return (
     <>
-      <HeaderBlog />
+      <InternalHeaderPost />
       <section className="post" id="main">
         <div className="post__container container">
           <section class="items-detail-container" id="post">

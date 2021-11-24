@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import FooterBlog from '../components/footerBlog'
 
 export default function MainBlog() {
   return (
@@ -7,7 +6,7 @@ export default function MainBlog() {
       <section className="blog" id="main">
         <div className="blog__container">
           <div className="card-blog">
-            <a href="/blog/es/implementar_una_buena_ui">
+            <a href="/blog/es/implementar-una-buena-ui">
               <Image src="/img/pc2.jpg" alt="know" className="knowledge_img"
                 width="800" height="600" />
               <div className="labels-container">

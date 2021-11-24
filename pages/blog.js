@@ -1,4 +1,4 @@
-import HeaderBlog from '../components/headerBlog'
+import InternalHeaderBlog from '../components/internalHeaderBlog'
 import MainBlog from '../components/mainBlog'
 import FooterBlog from '../components/footerBlog'
 import Script from 'next/script'
@@ -6,7 +6,7 @@ import Script from 'next/script'
 export default function Blog() {
   return (
     <>
-      <HeaderBlog />
+      <InternalHeaderBlog />
       <MainBlog />
       <FooterBlog />
       
