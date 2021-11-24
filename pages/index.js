@@ -103,8 +103,22 @@ export default function Home() {
             <section className="testimony__body" data-id="2">
               <div className="testimony__texts">
                 <h2 className="subtitle">
+                  Gabriel Pasqualini
+                  <span className="testimony__course">CEO at Pulpou</span>
+                </h2>
+                <p className="testimony__review">
+                  "We really enjoyed working with Alejandro, he has good communication and works very well as a team player. He developed some functionalities for our platform."
+                </p>
+              </div>
+              <figure className="testimony__picture">
+                <Image width="300" height="300" src="/img/gabiface.jpg" alt="face" className="testimony__img" />
+              </figure>
+            </section>
+            <section className="testimony__body" data-id="3">
+              <div className="testimony__texts">
+                <h2 className="subtitle">
                   Leopoldo Sandoval
-                  <span className="testimony__course">CEO at Avanti</span>
+                  <span className="testimony__course">Co-Founder at Avanti</span>
                 </h2>
                 <p className="testimony__review">
                   "Alejandro developed for us a simple and easy to use shopping cart for our customers, we have a great communication and we are happy to have worked together!"
@@ -114,7 +128,7 @@ export default function Home() {
                 <Image width="300" height="300" src="/img/leopoldoface.jpg" alt="face" className="testimony__img" />
               </figure>
             </section>
-            <section className="testimony__body" data-id="3">
+            <section className="testimony__body" data-id="4">
               <div className="testimony__texts">
                 <h2 className="subtitle">
                   Luis Miguel Esteban Lara
@@ -134,16 +148,14 @@ export default function Home() {
                 <Image width="300" height="300" src="/img/laraface.jpg" alt="face" className="testimony__img" />
               </figure>
             </section>
-            <section className="testimony__body" data-id="4">
+            <section className="testimony__body" data-id="5">
               <div className="testimony__texts">
                 <h2 className="subtitle">
                   Karel Alvarez y Michel Adam
                   <span className="testimony__course">Co-founders at Cat Reflex Solutions</span>
                 </h2>
                 <p className="testimony__review">
-                  "Alejandro is very dedicated, his work has been of high quality. We are creating an extension to the
-                  original
-                  original project"
+                  "Alejandro is very dedicated, his work has been of high quality"
                 </p>
               </div>
               <figure className="testimony__picture">
@@ -159,7 +171,7 @@ export default function Home() {
       </div>
 
       <FooterBlog />
-      
+
       <Script
         id="nav-js"
         src="/js/nav.js"
