@@ -538,6 +538,30 @@ body{
     .hero__title{
         font-size: 2.5rem;
     }
+
+    .testimony__container{
+        grid-template-columns: 30px 1fr 30px;
+    }
+
+    .testimony__body{
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content;
+        gap: 3em;
+        justify-items: center;
+    }
+
+    .testimony__img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .testimony__picture{
+        text-align: center;
+    }
+
+    .testimony__course{
+        margin-left: 0;
+    }
 }
 
 @media (max-width:768px) {
