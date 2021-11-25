@@ -7,7 +7,11 @@ export default function internalHeaderBlog() {
 
   const router = useRouter()
   const dataArray = router.asPath.split('/')
-  const lowerTitle = dataArray[3].replaceAll('-', ' ')
+  const lowerTitle = ""
+  
+  if(dataArray.length > 0 ){
+    lowerTitle = dataArray[3].replaceAll('-', ' ')
+  }
 
   useEffect(() => {
     setTitle(lowerTitle.charAt(0).toUpperCase() + lowerTitle.slice(1))
