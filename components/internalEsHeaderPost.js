@@ -5,8 +5,8 @@ import { useState, useEffect } from 'react';
 export default function internalHeaderBlog() {
   const [title, setTitle] = useState()
   const router = useRouter()
-  const dataArray = router.asPath.split('/')
-  const lowerTitle = dataArray[3].replaceAll('-', ' ')
+  let dataArray = router.asPath.split('/')
+  const lowerTitle = dataArray[3].replace('-', ' ')
 
   useEffect(() => {
     setTitle(lowerTitle.charAt(0).toUpperCase() + lowerTitle.slice(1))

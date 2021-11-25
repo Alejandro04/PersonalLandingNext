@@ -6,7 +6,7 @@ export default function internalHeaderBlog() {
   const [title, setTitle] = useState()
   const router = useRouter()
   let dataArray = router.asPath.split('/')
-  const lowerTitle = dataArray[3].replaceAll('-', ' ')
+  const lowerTitle = dataArray[3].replace('-', ' ')
 
   useEffect(() => {
     setTitle(lowerTitle.charAt(0).toUpperCase() + lowerTitle.slice(1))
