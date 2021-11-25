@@ -13,7 +13,7 @@ export default function internalHeaderBlog() {
           <p className="hero_paragraph">
             Mi experiencia para ti
           </p>
-          <a href="#main" className="cta">Learn more</a>
+          <a href="#main" className="cta">Leer más</a>
         </section>
 
       </header>

@@ -22,7 +22,7 @@ export default function internalHeaderBlog() {
           <h1 className="hero__title">
             {title}
           </h1>
-          <a href="#main" className="cta">Learn more</a>
+          <a href="#main" className="cta">Leer más</a>
         </section>
 
       </header>

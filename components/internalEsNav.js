@@ -16,6 +16,19 @@ export default function internalNav() {
           <li className="nav__items">
             <a href="/es/blog" className="nav__links">Blog</a>
           </li>
+          <li className="nav__items">
+            <a href="https://alejandroroa.medium.com/"
+              target="_blank" className="nav__links">Medium</a>
+          </li>
+          <li className="nav__items">
+            <a href="https://www.workana.com/freelancer/bb7ac4fb0818a18412d6249d5845476e"
+              target="_blank" className="nav__links">Workana</a>
+          </li>
+          <li className="nav__items">
+            <a href="https://www.linkedin.com/in/alejandroroa/"
+              target="_blank" className="nav__links">LinkedIn</a>
+          </li>
+
 
           <div className="nav__close">
             <Image width="30" height="30" src="/img/close.svg"  alt="close" />
