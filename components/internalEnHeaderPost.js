@@ -3,17 +3,10 @@ import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react';
 
 export default function internalHeaderBlog() {
-  const [title, setTitle] = useState();
+  const [title, setTitle] = useState()
   const router = useRouter()
-
-  if(router){
-    const dataArray = router.asPath.split('/')
-    let lowerTitle = ""
-  
-    if(dataArray.length > 0 ){
-      lowerTitle = dataArray[3].replaceAll('-', ' ')
-    }
-  }
+  let dataArray = router.asPath.split('/')
+  const lowerTitle = dataArray[3].replaceAll('-', ' ')
 
   useEffect(() => {
     setTitle(lowerTitle.charAt(0).toUpperCase() + lowerTitle.slice(1))
