@@ -6,7 +6,9 @@ export default function internalNav() {
       <nav className="nav container">
         <div className="nav__logo">
           <h2 className="nav__title">
-            alejodev.com
+            <a href="/">
+              alejodev.com
+            </a>
           </h2>
         </div>
         <ul className="nav__link nav__link--menu">
@@ -31,12 +33,12 @@ export default function internalNav() {
 
 
           <div className="nav__close">
-            <Image width="30" height="30" src="/img/close.svg"  alt="close" />
+            <Image width="30" height="30" src="/img/close.svg" alt="close" />
           </div>
         </ul>
 
         <div className="nav__menu">
-          <Image width="30" height="30" src="/img/nav.svg"  alt="up" className="nav__img" />
+          <Image width="30" height="30" src="/img/nav.svg" alt="up" className="nav__img" />
         </div>
       </nav>
     </>
