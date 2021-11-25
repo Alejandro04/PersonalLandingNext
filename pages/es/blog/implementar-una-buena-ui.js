@@ -1,4 +1,4 @@
-import InternalEsHeaderPost from '../../../components/InternalEsHeaderPost'
+import InternalEsHeaderPost from '../../../components/internalEsHeaderPost'
 import FooterBlog from '../../../components/footerBlog'
 import Script from 'next/script'
 
