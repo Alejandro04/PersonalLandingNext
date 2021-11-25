@@ -7,7 +7,7 @@ export default function internalHeaderBlog() {
 
   const router = useRouter()
   const dataArray = router.asPath.split('/')
-  const lowerTitle = ""
+  let lowerTitle = ""
   
   if(dataArray.length > 0 ){
     lowerTitle = dataArray[3].replaceAll('-', ' ')
