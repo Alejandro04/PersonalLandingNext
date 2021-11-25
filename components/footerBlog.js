@@ -1,7 +1,7 @@
 export default function FooterBlog() {
   return (
     <>
-      <footer className="footer" id="footer">
+      <footer className="footer">
         <div className="footer__container">
           <div>
             <span>+58 04247395321</span>

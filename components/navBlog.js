@@ -22,7 +22,7 @@ export default function NavBlog() {
             <a href="#skills" className="nav__links">Skills</a>
           </li>
           <li className="nav__items">
-            <a href="#footer" className="nav__links">Contact</a>
+            <a href="#testimony" className="nav__links">Testimonials</a>
           </li>
           <li className="nav__items">
             <a href="/es/blog" className="nav__links">Blog ES</a>
@@ -41,6 +41,9 @@ export default function NavBlog() {
           <li className="nav__items">
             <a href="https://www.linkedin.com/in/alejandroroa/"
               target="_blank" className="nav__links">LinkedIn</a>
+          </li>
+          <li className="nav__items">
+            <a href="#footer" className="nav__links">Contact</a>
           </li>
 
           <div className="nav__close">

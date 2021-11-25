@@ -120,6 +120,10 @@ body{
     padding: 13px 30px;
     border-radius: 32px;
     z-index: 1 !important;
+    border: 0;
+}
+.cta:hover{
+    cursor: pointer;
 }
 
 /*About*/
@@ -501,6 +505,19 @@ body{
     width: 100%;
 }
 
+/*
+    FORM CONTACT
+*/
+.inputForm, .textareaForm{
+    width: 400px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    margin: 10px;
+}
+.textareaForm{
+    height: 100px;
+}
 /*MEDIAS QUERYS*/
 
 @media (max-width:800px) {

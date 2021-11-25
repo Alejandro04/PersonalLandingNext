@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Script from 'next/script'
 import HeaderBlog from '../components/headerBlog'
 import FooterBlog from '../components/footerBlog'
+import ContactForm from '../components/contactForm'
 
 export default function Home() {
   return (
@@ -83,7 +84,7 @@ export default function Home() {
         </section>
 
 
-        <section className="testimony">
+        <section className="testimony" id="testimony">
           <div className="testimony__container container">
             <Image width="64" height="64" src="/img/leftArrow.svg" alt="left_arrow" className="testimony__arrow" id="before" />
             <section className="testimony__body testimony__body--show" data-id="1">
@@ -169,6 +170,11 @@ export default function Home() {
           </div>
         </section>
       </div>
+
+      <section className="container about" id="footer">
+        <h2 className="subtitle">Contact me</h2>
+        <ContactForm />
+      </section>
 
       <FooterBlog />
 
