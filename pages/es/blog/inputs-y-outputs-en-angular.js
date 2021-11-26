@@ -21,7 +21,7 @@ export default function Post() {
                             veremos luego.
                         </article>
                         <article>
-                            Para estos ejemplos vamos a usar el proyecto explicado <a target="_blank" href="/blog/es/introduccion-angular-angularmaterial-firebase">En el tutorial anterior</a>
+                            Para estos ejemplos vamos a usar el proyecto explicado <a target="_blank" href="/es/blog/introduccion-angular-angularmaterial-y-firebase">En el tutorial anterior</a>
                         </article>
                         <article>
                             Vamos a components/plates/plates.component.html. Podemos observar dos cosas, de la linea 1 a la 21
