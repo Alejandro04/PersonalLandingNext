@@ -542,7 +542,8 @@ AUTOCOMPLETE
     }
     .nav__link--menu{
         position: fixed;
-        background-color: black;
+        background-color: royalblue;
+        color: #fff;
         top: 0;
         left: 0;
         height: 100%;
