@@ -5,12 +5,16 @@
 
   if (openBtn && menu && closeNav) {
     openBtn.addEventListener('click', () => {
-      console.log("si")
       menu.classList.add('nav__link--show');
       closeNav.classList.add('nav__link--show');
     })
 
     closeNav.addEventListener('click', () => {
+      menu.classList.remove('nav__link--show');
+      closeNav.classList.remove('nav__link--show');
+    })
+
+    menu.addEventListener('click', () => {
       menu.classList.remove('nav__link--show');
       closeNav.classList.remove('nav__link--show');
     })

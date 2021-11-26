@@ -561,6 +561,10 @@ AUTOCOMPLETE
         opacity: 1;
         pointer-events: unset;
     }
+    .nav__link{
+      gap: 1.5em;
+      padding: 50px 0 50px 0;
+    }
     .nav__close{
         position: absolute;
         top: 30px;
