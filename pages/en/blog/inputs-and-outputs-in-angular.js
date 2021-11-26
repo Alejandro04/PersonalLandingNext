@@ -11,43 +11,42 @@ export default function Post() {
                 <div className="post__container container">
                     <section class="items-detail-container" id="post">
                         <article>
-                            Una de las cosas que debemos tener en mente en aprender cuando desarrollamos en el frontend
-                            es cómo pasar los datos entre componentes y a nivel lógico cómo pasarlos entre padres a hijos y de hijos a padres
-                            ya que ese flujo de datos nos va ayudar a definir componentes de una forma organizada en el proyecto y también
-                            ayudará a ejecutar un soporte adecuado del mismo en el transcurso del tiempo.
+                            One of the things that we must keep in mind to learn when we develop in the frontend
+                            is how to pass the data between components and at a logical level how to pass them between parents to children and from children to parents
+                            since that data flow will help us to define components in an organized way in the project and will also help us to execute a proper support of the project.
+                            will help to execute a proper support of the project in the course of time.
                         </article>
                         <article>
-                            En Angular conozco un par de formas: Inputs (de padres a hijos) Outputs (de hijos a padres) y a través de un store, este último caso lo
-                            veremos luego.
+                            In Angular I know a couple of ways: Inputs (from parent to child) Outputs (from child to parent) and through a store, the latter case we will
+                            we will see it later.
                         </article>
                         <article>
-                            Para estos ejemplos vamos a usar el proyecto explicado <a target="_blank" href="/blog/es/introduccion-angular-angularmaterial-firebase">En el tutorial anterior</a>
+                            For these examples we are going to use the explained project <a target="_blank" href="/en/blog/introduction-angular-angularmaterial-and-firebase">In the previous tutorial</a>
                         </article>
                         <article>
-                            Vamos a components/plates/plates.component.html. Podemos observar dos cosas, de la linea 1 a la 21
-                            un acordión de AngularMaterial que lleva dentro de él un pequeño formulario para guardar y editar los platos.
+                            We go to components/plates/plates.component.html. We can observe two things, from line 1 to line 21
+                            an AngularMaterial accordion that has inside it a small form to save and edit the plates.
                         </article>
                         <article>
-                            Luego, entre las lineas 22 a 26 tenemos app-plates-list, es decir, el componente hijo. Podemos observar que tiene
-                            una configuración especial y con ello parte de las funcionalidades de envío y recepción de datos.
+                            Then, between lines 22 to 26 we have app-plates-list, that is, the child component. We can observe that it has
+                            a special configuration and with it part of the functionalities of sending and receiving data.
                         </article>
                         <article>
-                            Ahora, vamos a explicar cada uno de los procesos:
+                            Now, we will explain each of the processes:
                         </article>
                         <article>
                             <span class="post-subtitle">
                                 Inputs:
                             </span>
-                            ¿Cómo comienza el flujo de datos? en la linea 18 podemos ver la función createPlate() y dicha función nos permite envíar datos al controlador y agregarlos al input tipo FormControl.
-                            FormControl es una funcionalidad de @angular/forms y nos permite usar componentes reactivos para nuestros
-                            formularios.
+                            How does the data flow start? In line 18 we can see the createPlate() function and this function allows us to send data to the controller and add it to the FormControl type input.
+                            FormControl is a feature of @angular/forms and allows us to use reactive components for our forms.
                         </article>
                         <article>
-                            Ahora bien, recordemos que este proyecto está en base a Firebase, por lo tanto debemos
-                            integrar sus funciones a nuestros controladores e inyectar sus dependencias para usar sus funciones.
-                            Este caso particular divide el proceso en dos, identificar si la acción del formulario es para registrar un nuevo
-                            plato o si es para actualizar un plato existente. No entro más en detalle para no perder el hilo de lo que necesitamos
-                            comprender para este post.
+                            Now, let's remember that this project is based on Firebase, so we must integrate its functions to our controllers and inject its dependencies to use its functions.
+                            integrate its functions to our controllers and inject its dependencies to use its functions.
+                            This particular case divides the process in two, identify if the action of the form is to register a new dish or if it is to update an existing dish.
+                            plate or if it is to update an existing plate. I won't go into more detail so as not to lose the thread of what we need to understand for this post.
+                            to understand for this post.
                             <div class="img-post-container">
                                 <Image width="1200px" height="700px" src="/img/posts/inputs_outputs/1-min.png" alt="angular1" />
                             </div>
@@ -57,16 +56,16 @@ export default function Post() {
 
                         </article>
                         <article>
-                            ¿Cuál es la idea? guardar un plato y visualizarlo de forma reactiva en nuestra tabla que lista los platos
-                            (componente hijo) entonces veamos:
+                            What is the idea? save a plate and display it reactively in our table that lists the plates (child component).
+                            (child component) so let's see:
                         </article>
                         <article>
-                            Luego de que firebase en este caso guarde los datos nosotros necesitamos configurar un proceso que permita visualizar
-                            dichos datos. Entonces, en el constructor de nuestro componente llamamos la colección de platos y se la pasamos a una variable plates.
-                            plates es un array tipo observable. ¿Por qué observable? porque firestore (en este caso la DB que estamos usando de firebase)
-                            va devolver siempre un observable y como estamos escribiendo en Typescript debemos definirlo como tal.
-                            Luego en nuestra vista configuramos un key mediante el cual vamos a pasarle ese array a nuestro componente hijo.
-                            Pueden ver las lineas 22 y 29 del constructor. Linea 25 del template.
+                            After firebase in this case saves the data we need to set up a process that allows us to visualize the data.
+                            that data. Then, in the constructor of our component we call the collection of plates and pass it to a variable plates.
+                            plates is an observable type array, why observable? because firestore (in this case the DB we are using from firebase)
+                            is always going to return an observable and since we are writing in Typescript we must define it as such.
+                            Then in our view we configure a key through which we are going to pass that array to our child component.
+                            You can see the lines 22 and 29 of the constructor. Line 25 of the template.
                             <div class="img-post-container">
                                 <Image width="1200px" height="700px" src="/img/posts/inputs_outputs/3-min.png" alt="angular3" />
                             </div>
@@ -75,12 +74,12 @@ export default function Post() {
                             </div>
                         </article>
                         <article>
-                            En nuestro componente hijo (lista de platos) definimos en la linea 11 @Input() plates: any[];
-                            Input es un módulo de @angular/core y plates es el key que definimos en el template del componente padre.
-                            Allí entonces, estamos recibiendo la lista de platos. En la función ngOnChanges pasamos esa lista dataSource que es una variable
-                            tipo MatTableModule y que va permitir la visualización del mismo a través del template. En el template simplemente
-                            accedemos a los keys de dicho array. Estos items están en la docu de Angular Material.
-                            Pueden ver las lineas 11 y 17 del controlador.
+                            In our child component (list of plates) we define in line 11 @Input() plates: any[];
+                            Input is a module of @angular/core and plates is the key that we defined in the template of the parent component.
+                            There then, we are receiving the list of plates. In the function ngOnChanges we pass that list dataSource that is a variable
+                            type MatTableModule and that is going to allow the visualization of the same one through the template. In the template we simply
+                            we access to the keys of this array. These items are in the Angular Material docu.
+                            You can see the lines 11 and 17 of the controller.
                             <div class="img-post-container">
                                 <Image width="1200px" height="700px" src="/img/posts/inputs_outputs/5-min.png" alt="angular5" />
                             </div>
@@ -89,45 +88,45 @@ export default function Post() {
                             </div>
                         </article>
                         <article>
-                            Entonces en resumen. Configuramos nuestro componente padre, definimos los tipos de datos en nuestros controladores
-                            y pasamos a través del componente hijo definido en el template del padre un key y su respectivo value. En el componente
-                            hijo definimos una variable tipo Input que va recibir dicho dato.
+                            So in summary. We set up our parent component, we define the data types in our controllers
+                            and we pass through the child component defined in the template of the parent a key and its respective value. In the component
+                            child component we define an Input type variable that will receive that data.
                         </article>
                         <article>
                             <span class="post-subtitle">
                                 Outputs:
                             </span>
-                            ¿Qué necesitamos en este caso? en la tabla de platos tenemos un botón tipo pencil, este botón envía
-                            los datos del componente hijo (la tabla que lista los platos) al componente padre (el formulario)
-                            entonces configuramos lo siguiente en el componente hijo:
+                            What do we need in this case? in the table of dishes we have a pencil button, this button sends the data from the child component (the table that lists the dishes) to the parent component (the form).
+                            the data from the child component (the table that lists the dishes) to the parent component (the form).
+                            then we configure the following in the child component:
                         </article>
                         <article>
-                            EventEmitter y Output de @angular/core nos permite ejecutar este proceso, entonces los definimos de la siguiente manera:
-                            En la linea escribimos un Output tipo EventEmitter llamado plateEvent, esta variable va comunicarse con nuestro componente
-                            padre. Esto lo podemos ver en la linea 12
+                            EventEmitter and Output of @angular/core allow us to execute this process, so we define them as follows:
+                            In the line we write an Output type EventEmitter called plateEvent, this variable is going to communicate with our parent component.
+                            parent. We can see this in line 12
                             <div class="img-post-container">
                                 <Image width="1200px" height="700px" src="/img/posts/inputs_outputs/7-min.png" alt="angular7" />
                             </div>
                         </article>
                         <article>
-                            En nuestro template definimos la función a ejecutar cuando el usuario da click sobre el botón tipo pencil, esto lo
-                            podemos ver en la linea 13
+                            In our template we define the function to execute when the user clicks on the pencil button, this can be seen in line 13 of the template.
+                            we can see it in line 13
                             <div class="img-post-container">
                                 <Image width="1200px" height="700px" src="/img/posts/inputs_outputs/8-min.png" alt="angular8" />
                             </div>
                         </article>
                         <article>
-                            Después en nuestro controlador definimos la función addPlateToForm(value: string) que va recibir el value
-                            que se le envía desde el form y se accede a la función emit (ya que plateEvent es un Output tipo EventEmitter)
-                            Esto de forma concreta envía el dato al componente padre. Pueden ver la linea 22
+                            Then in our controller we define the function addPlateToForm(value: string) that will receive the value sent from the form and access the function emit (because plateEvent is an Output type EventEmitter).
+                            that is sent from the form and accesses the emit function (since plateEvent is an Output type EventEmitter).
+                            This in concrete form sends the data to the parent component. You can see line 22
                             <div class="img-post-container">
                                 <Image width="1200px" height="700px" src="/img/posts/inputs_outputs/9-min.png" alt="angular9" />
                             </div>
                         </article>
                         <article>
-                            Ahora bien, para terminar de comprender el flujo de datos volvamos al template del componente padre donde tenemos
-                            definido el componente hijo en la linea 23, vemos que configuramos el key del Output tipo EventEmitter definido en el
-                            hijo con la función addPlateToForm($event) que es la que se encarga finalmente de colocar el dato en el formulario.
+                            Now, to finish understanding the data flow let's go back to the template of the parent component where we have the child component defined on line 23.
+                            defined the child component in the line 23, we see that we configure the key of the Output type EventEmitter defined in the child with the function addPlateToForm($event), which is the one that is in charge of placing the data in the
+                            child with the function addPlateToForm($event) that is the one that is finally in charge of placing the data in the form.
                             <div class="img-post-container">
                                 <Image width="1200px" height="700px" src="/img/posts/inputs_outputs/10-min.png" alt="angular10" />
                             </div>
@@ -136,16 +135,16 @@ export default function Post() {
                             </div>
                         </article>
                         <article>
-                            Y listo! ya estudiamos como pasar datos entre componentes padres e hijos con Angular.
+                            And that's it! We've studied how to pass data between parent and child components with Angular.
                         </article>
                         <article>
-                            Pueden clonar el proyecto <a target="_blank" href="https://github.com/Alejandro04/Restaurants-Angular">AQUÍ</a>
+                            You can clone the project <a target="_blank" href="https://github.com/Alejandro04/Restaurants-Angular">HERE</a>
                         </article>
                         <article>
-                            Pueden ver el proyecto en producción <a target="_blank" href="https://restaurants-angular.vercel.app/">AQUÍ</a>
+                            You can see the project in production <a target="_blank" href="https://restaurants-angular.vercel.app/">HERE</a>
                         </article>
                         <article>
-                            Espero que les sirva, saludos!
+                            I hope you find it useful, greetings!
                         </article>
 
                     </section>
