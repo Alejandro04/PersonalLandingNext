@@ -514,6 +514,7 @@ body{
     border-radius: 4px;
     border: 1px solid gray;
     margin: 10px;
+    padding: 10px;
 }
 .textareaForm{
     height: 100px;
@@ -596,6 +597,13 @@ body{
         "card3  card2"
         "card3  card4"
         ".      card4";
+    }
+    .inputForm, .textareaForm{
+       width: 100%;
+       margin: auto;
+    }
+    .textareaForm{
+        margin-top: 10px;
     }
 
 }
