@@ -1,60 +1,77 @@
+import { useState, useEffect } from 'react';
 import Image from 'next/image'
+import TextField from '@mui/material/TextField';
+import Autocomplete from '@mui/material/Autocomplete';
+import posts from '../data/postsEn.json';
 
 export default function MainBlog() {
+  const [dataFiltered, setDataFiltered] = useState()
+  const [categories, setCategories] = useState()
+
+  useEffect(() => {
+    const cleanCategories = cleanCategoriesHandler()
+    setCategories(cleanCategories)
+    setDataFiltered(posts)
+  }, []);
+
+
+  const cleanCategoriesHandler = () => {
+    const categoriesFormat = posts.map((x) => {
+      return {
+        category: x.category
+      }
+    })
+
+    const catMap = categoriesFormat.map(item => {
+      return [item.category, item]
+    });
+    const catMapArr = new Map(catMap); // Pares de clave y valor
+    const cleanCategories = [...catMapArr.values()]; // Conversión a un array
+
+    return cleanCategories
+  }
+
+  const onChangePosts = (event, values) => {
+    if (values) {
+      const data = posts.filter(x => x.category === values.category)
+      setDataFiltered(data)
+    }
+
+    if (!values) {
+      setDataFiltered(posts)
+    }
+  }
+
   return (
     <>
       <section className="blog" id="main">
+        <div className="autocomplete">
+          <Autocomplete
+            disablePortal
+            id="combo-box-demo-2"
+            options={categories ? categories : []}
+            autoHighlight
+            sx={{ width: 400 }}
+            onChange={onChangePosts}
+            getOptionLabel={(option) => `${option.category}`}
+            renderInput={(params) => <TextField {...params} label="Buscar" />}
+          />
+        </div>
         <div className="blog__container">
-          <div className="card-blog">
-            <a href="/en/blog/implement-a-good-ui">
-              <Image src="/img/pc2.jpg" alt="know" className="knowledge_img"
-                width="800" height="600" />
-              <div className="labels-container">
-                <label className="labelPosts">Implement a good ui</label>
-                <p className="labelPostsResume">
-                  We must take into account four basic things,
-                  the architecture of the website, the tools to be used, the quality of the assets and the
-                  the technology to implement.
-                </p>
-              </div>
-            </a>
-          </div>
-          <div className="card-blog">
-            <a href="/en/blog/state-management-in-angular-ngxs">
-              <Image src="/img/pc2.jpg" alt="know" className="knowledge_img"
-                width="800" height="600" />
-              <div className="labels-container">
-                <label className="labelPosts">State Management in Angular: Ngxs</label>
-                <p className="labelPostsResume">
-                  A state handler similar to redux flow for Angular
-                </p>
-              </div>
-            </a>
-          </div>
-          <div className="card-blog">
-            <a href="/en/blog/introduction-angular-angularmaterial-and-firebase">
-              <Image src="/img/pc2.jpg" alt="know" className="knowledge_img"
-                width="800" height="600" />
-              <div class="labels-container">
-                <label class="labelPosts">Introduction: Angular, AngularMaterial and Firebase</label>
-                <p class="labelPostsResume">
-                  A good stack of tools to develop platforms
-                </p>
-              </div>
-            </a>
-          </div>
-          <div className="card-blog">
-            <a href="/en/blog/inputs-and-outputs-in-angular">
-              <Image src="/img/pc2.jpg" alt="know" className="knowledge_img"
-                width="800" height="600" />
-              <div class="labels-container">
-                <label class="labelPosts">Inputs and Outputs in Angular</label>
-                <p class="labelPostsResume">
-                  Passing data from parent to child and child to parent components
-                </p>
-              </div>
-            </a>
-          </div>
+          {dataFiltered && dataFiltered.map(post =>
+            <div className="card-blog" key={post.id}>
+              <a href={post.post_url}>
+                <Image src={post.img_url} alt="know" className="knowledge_img"
+                  width="800" height="600" />
+                <div className="labels-container">
+                  <label className="labelPosts">{post.title}</label>
+                  <p className="labelPostsResume">
+                    {post.description}
+                  </p>
+                </div>
+              </a>
+            </div>
+          )}
         </div>
       </section>
     </>
