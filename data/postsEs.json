@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "Implementar una buena ui",
+    "img_url": "/img/pc2.jpg",
+    "post_url": "/es/blog/implementar-una-buena-ui",
+    "description": "Debemos tener en cuenta cuatro cosas elementales, la arquitectura del website, las herramientas a usar, la calidad de los assets y la tecnología a implementar.",
+    "category": "UI"
+    
+  },
+  {
+    "id": 2,
+    "title": "State Management en Angular: Ngxs",
+    "img_url": "/img/pc2.jpg",
+    "post_url": "/es/blog/introduccion-angular-angularmaterial-y-firebase",
+    "description": "Un manejador de estados similar al flow de redux para Angular",
+    "category": "Angular"
+  },
+  {
+    "id": 3,
+    "title": "Introducción: Angular, AngularMaterial y Firebase",
+    "img_url": "/img/pc2.jpg",
+    "post_url": "/es/blog/introduccion-angular-angularmaterial-y-firebase",
+    "description": "Un buen stack de herramientas para desarrollar plataformas",
+    "category": "Angular"
+  },
+  {
+    "id": 4,
+    "title": "Inputs y Outputs en Angular",
+    "img_url": "/img/pc2.jpg",
+    "post_url": "/es/blog/inputs-y-outputs-en-angular",
+    "description": "Pasar datos de componentes padres a hijos y de hijos a padres",
+    "category": "Angular"
+  }
+]

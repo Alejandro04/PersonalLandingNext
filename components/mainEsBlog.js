@@ -1,21 +1,45 @@
+import { useState, useEffect } from 'react';
 import Image from 'next/image'
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
-
-const categories = [
-  { label: 'The Shawshank Redemption', year: 1994 },
-  { label: 'The Godfather', year: 1972 },
-  { label: 'The Godfather: Part II', year: 1974 },
-  { label: 'The Dark Knight', year: 2008 },
-  { label: '12 Angry Men', year: 1957 },
-  { label: "Schindler's List", year: 1993 },
-  { label: 'Pulp Fiction', year: 1994 }
-]
+import posts from '../data/postsEs.json';
 
 export default function MainBlog() {
+  const [dataFiltered, setDataFiltered] = useState()
+  const [categories, setCategories] = useState()
 
-  const onChangeCategories = (event, values) => {
-    console.log("values", values)
+  useEffect(() => {
+    const cleanCategories = cleanCategoriesHandler()
+    setCategories(cleanCategories)
+    setDataFiltered(posts)
+  }, []);
+
+
+  const cleanCategoriesHandler = () => {
+    const categoriesFormat = posts.map((x) => {
+      return {
+        category: x.category
+      }
+    })
+
+    const catMap = categoriesFormat.map(item => {
+      return [item.category, item]
+    });
+    const catMapArr = new Map(catMap); // Pares de clave y valor
+    const cleanCategories = [...catMapArr.values()]; // Conversión a un array
+
+    return cleanCategories
+  }
+
+  const onChangePosts = (event, values) => {
+    if (values) {
+      const data = posts.filter(x => x.category === values.category)
+      setDataFiltered(data)
+    }
+
+    if (!values) {
+      setDataFiltered(posts)
+    }
   }
 
   return (
@@ -28,62 +52,26 @@ export default function MainBlog() {
             options={categories ? categories : []}
             autoHighlight
             sx={{ width: 400 }}
-            onChange={onChangeCategories}
-            getOptionLabel={(option) => `${option.label}`}
+            onChange={onChangePosts}
+            getOptionLabel={(option) => `${option.category}`}
             renderInput={(params) => <TextField {...params} label="Buscar" />}
           />
         </div>
         <div className="blog__container">
-          <div className="card-blog">
-            <a href="/es/blog/implementar-una-buena-ui">
-              <Image src="/img/pc2.jpg" alt="know" className="knowledge_img"
-                width="800" height="600" />
-              <div className="labels-container">
-                <label className="labelPosts">Desarrollar una buena UI</label>
-                <p className="labelPostsResume">
-                  Debemos tener en cuenta cuatro cosas elementales,
-                  la arquitectura del website, las herramientas a usar, la calidad de los assets y
-                  la tecnología a implementar.
-                </p>
-              </div>
-            </a>
-          </div>
-          <div className="card-blog">
-            <a href="/es/blog/state-management-en-angular-ngxs">
-              <Image src="/img/pc2.jpg" alt="know" className="knowledge_img"
-                width="800" height="600" />
-              <div className="labels-container">
-                <label className="labelPosts">State Management en Angular: Ngxs</label>
-                <p className="labelPostsResume">
-                  Un manejador de estados similar al flow de redux para Angular
-                </p>
-              </div>
-            </a>
-          </div>
-          <div className="card-blog">
-            <a href="/es/blog/introduccion-angular-angularmaterial-y-firebase">
-              <Image src="/img/pc2.jpg" alt="know" className="knowledge_img"
-                width="800" height="600" />
-              <div class="labels-container">
-                <label class="labelPosts">Introducción: Angular, AngularMaterial y Firebase</label>
-                <p class="labelPostsResume">
-                  Un buen stack de herramientas para desarrollar plataformas
-                </p>
-              </div>
-            </a>
-          </div>
-          <div className="card-blog">
-            <a href="/es/blog/inputs-y-outputs-en-angular">
-              <Image src="/img/pc2.jpg" alt="know" className="knowledge_img"
-                width="800" height="600" />
-              <div class="labels-container">
-                <label class="labelPosts">Inputs y Outputs en Angular</label>
-                <p class="labelPostsResume">
-                  Pasar datos de componentes padres a hijos y de hijos a padres
-                </p>
-              </div>
-            </a>
-          </div>
+          {dataFiltered && dataFiltered.map(post =>
+            <div className="card-blog" key={post.id}>
+              <a href={post.post_url}>
+                <Image src={post.img_url} alt="know" className="knowledge_img"
+                  width="800" height="600" />
+                <div className="labels-container">
+                  <label className="labelPosts">{post.title}</label>
+                  <p className="labelPostsResume">
+                    {post.description}
+                  </p>
+                </div>
+              </a>
+            </div>
+          )}
         </div>
       </section>
     </>
