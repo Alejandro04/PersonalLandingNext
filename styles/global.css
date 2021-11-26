@@ -519,6 +519,21 @@ body{
 .textareaForm{
     height: 100px;
 }
+
+
+/*
+AUTOCOMPLETE
+*/
+
+.autocomplete{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
 /*MEDIAS QUERYS*/
 
 @media (max-width:800px) {

@@ -1,9 +1,38 @@
 import Image from 'next/image'
+import TextField from '@mui/material/TextField';
+import Autocomplete from '@mui/material/Autocomplete';
+
+const categories = [
+  { label: 'The Shawshank Redemption', year: 1994 },
+  { label: 'The Godfather', year: 1972 },
+  { label: 'The Godfather: Part II', year: 1974 },
+  { label: 'The Dark Knight', year: 2008 },
+  { label: '12 Angry Men', year: 1957 },
+  { label: "Schindler's List", year: 1993 },
+  { label: 'Pulp Fiction', year: 1994 }
+]
 
 export default function MainBlog() {
+
+  const onChangeCategories = (event, values) => {
+    console.log("values", values)
+  }
+
   return (
     <>
       <section className="blog" id="main">
+        <div className="autocomplete">
+          <Autocomplete
+            disablePortal
+            id="combo-box-demo-2"
+            options={categories ? categories : []}
+            autoHighlight
+            sx={{ width: 400 }}
+            onChange={onChangeCategories}
+            getOptionLabel={(option) => `${option.label}`}
+            renderInput={(params) => <TextField {...params} label="Buscar" />}
+          />
+        </div>
         <div className="blog__container">
           <div className="card-blog">
             <a href="/es/blog/implementar-una-buena-ui">
