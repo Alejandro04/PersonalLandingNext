@@ -54,7 +54,7 @@ export default function MainBlog() {
             sx={{ width: 400 }}
             onChange={onChangePosts}
             getOptionLabel={(option) => `${option.category}`}
-            renderInput={(params) => <TextField {...params} label="Buscar" />}
+            renderInput={(params) => <TextField {...params} label="Search for categories" />}
           />
         </div>
         <div className="blog__container">

@@ -16,7 +16,10 @@ export default function internalNav() {
             <a href="/" className="nav__links">Home</a>
           </li>
           <li className="nav__items">
-            <a href="/en/blog" className="nav__links">Blog</a>
+            <a href="/en/blog" className="nav__links">Blog En</a>
+          </li>
+          <li className="nav__items">
+            <a href="/es/blog" className="nav__links">Blog Es</a>
           </li>
           <li className="nav__items">
             <a href="https://alejandroroa.medium.com/"
