@@ -22,6 +22,9 @@ export default function internalNav() {
             <a href="/en/blog" className="nav__links">Blog En</a>
           </li>
           <li className="nav__items">
+            <a href="https://github.com/Alejandro04/" className="nav__links">Github</a>
+          </li>
+          <li className="nav__items">
             <a href="https://alejandroroa.medium.com/"
               target="_blank" className="nav__links">Medium</a>
           </li>

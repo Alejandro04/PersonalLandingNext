@@ -7,6 +7,17 @@ import ContactForm from '../components/contactForm'
 export default function Home() {
   return (
     <>
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+          ga('create', 'UA-164272795-1', 'auto');
+          ga('send', 'pageview');
+        `}
+      </Script>
+      <Script
+        src="https://www.google-analytics.com/analytics.js"
+        strategy="afterInteractive"
+      />
       <HeaderBlog />
 
       <div>
@@ -94,7 +105,7 @@ export default function Home() {
                   <span className="testimony__course">CEO at Globalesm, Inc</span>
                 </h2>
                 <p className="testimony__review">
-                "Alejandro is a good developer who has worked with us on the creation and maintenance of our Claims Connect product. We feel very comfortable working with him."
+                  "Alejandro is a good developer who has worked with us on the creation and maintenance of our Claims Connect product. We feel very comfortable working with him."
                 </p>
               </div>
               <figure className="testimony__picture">
