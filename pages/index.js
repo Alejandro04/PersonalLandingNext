@@ -94,7 +94,7 @@ export default function Home() {
                   <span className="testimony__course">CEO at Globalesm, Inc</span>
                 </h2>
                 <p className="testimony__review">
-                  "Alejandro is a good developer who has accompanied us in the creation and maintenance of our Claims Connect product. We feel very comfortable working with him."
+                "Alejandro is a good developer who has worked with us on the creation and maintenance of our Claims Connect product. We feel very comfortable working with him."
                 </p>
               </div>
               <figure className="testimony__picture">
@@ -122,7 +122,7 @@ export default function Home() {
                   <span className="testimony__course">Co-Founder at Avanti</span>
                 </h2>
                 <p className="testimony__review">
-                  "Alejandro developed for us a simple and easy to use shopping cart for our customers, we have a great communication and we are happy to have worked together!"
+                  "Alejandro developed for us a simple and easy to use order cart for our customers, we have a great communication and we are happy to have worked together!"
                 </p>
               </div>
               <figure className="testimony__picture">
