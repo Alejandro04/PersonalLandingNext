@@ -96,6 +96,24 @@ export default function Post() {
               Algo que no puede faltar, seleccionar fuentes adecuadas para nuestro sitio.
             </article>
             <article>
+              <span class="post-subtitle-subtitle">
+                <a href="https://unsplash.com/" target="_blank">UnSplash: </a>
+              </span>
+             Podemos bajar imágenes de alta calidad de forma gratuita
+            </article>
+            <article>
+              <span class="post-subtitle-subtitle">
+                <a href="https://boxicons.com/" target="_blank">BoxIcons: </a>
+              </span>
+             Podemos bajar iconos de alta calidad de forma gratuita
+            </article>
+            <article>
+              <span class="post-subtitle-subtitle">
+                <a href="https://www.magicpattern.design/" target="_blank">MagicPattern: </a>
+              </span>
+             Podemos configurar un css background personalizado para secciones de nuestro sitio web
+            </article>
+            <article>
               <span class="post-subtitle">
                 La calidad de los assets:
               </span>

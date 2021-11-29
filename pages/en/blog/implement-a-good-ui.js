@@ -97,6 +97,25 @@ export default function Post() {
               Something that can not be missed, select fonts suitable for our site.
             </article>
             <article>
+              <span class="post-subtitle-subtitle">
+                <a href="https://unsplash.com/" target="_blank">UnSplash: </a>
+              </span>
+              We can download high quality images for free
+            </article>
+            <article>
+              <span class="post-subtitle-subtitle">
+                <a href="https://boxicons.com/" target="_blank">BoxIcons: </a>
+              </span>
+              We can download high quality icons for free.
+            </article>
+            <article>
+              <span class="post-subtitle-subtitle">
+                <a href="https://www.magicpattern.design/" target="_blank">MagicPattern: </a>
+              </span>
+              We can set up a custom css background for sections of our site
+              We can download high quality icons for free.
+            </article>
+            <article>
               <span class="post-subtitle">
                 The quality of the assets:
               </span>
