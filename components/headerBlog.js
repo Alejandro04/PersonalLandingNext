@@ -1,4 +1,5 @@
 import Nav from './navBlog'
+import Image from 'next/image'
 
 export default function HeaderBlog() {
   return (
@@ -11,11 +12,14 @@ export default function HeaderBlog() {
             Alejandro Roa
           </h1>
           <p className="hero_paragraph">
-            Father of Ana Lucia ❤️
+            Ana Lucia's Father ❤️
           </p>
           <p className="hero_paragraph">
             Software Engineer
           </p>
+          <div className="headerImgContainer">
+            <Image width="100px" height="100px" className="headerImg" src="/img/meok.png"/>
+          </div>
           <a href="#main" className="cta">Learn more</a>
         </section>
 
