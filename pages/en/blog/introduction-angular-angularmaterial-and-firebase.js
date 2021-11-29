@@ -11,47 +11,47 @@ export default function Post() {
                 <div className="post__container container">
                     <section class="items-detail-container" id="post">
                         <article>
-                            Lo primero que debemos entender es que, necesitamos implementar una herramienta
-                            que nos va ayudar a ser más productivos a la hora de trabajar con Angular, dicha herramienta
-                            es <a target="_blank" href="https://cli.angular.io/">Angular Cli</a> y recomiendo instalarla en tu
-                            máquina de forma global para acceder a sus funcionalidades.
+                            The first thing to understand is that we need to implement a tool that will help us to be more productive when working with Angular.
+                            that will help us to be more productive when working with Angular
+                            is <a target="_blank" href="https://cli.angular.io/">Angular Cli</a> and I recommend installing it on your
+                            machine globally to access its functionalities.
                         </article>
                         <article>
-                            También debemos instalar <a target="_blank" href="https://www.npmjs.com/package/firebase-tools">Firebase
-                                Tools</a> de forma
-                            global para acceder a las funcionalidades de firebase.
+                            We must also install <a target="_blank" href="https://www.npmjs.com/package/firebase-tools">Firebase
+                                Tools</a> globally
+                            globally to access firebase functionalities.
                         </article>
                         <article>
-                            Es muy útil tener en cuenta la documentación de <a target="_blank" href="https://material.angular.io/">Angular
+                            It is very useful to take into account the documentation of <a target="_blank" href="https://material.angular.io/">Angular
                                 Material</a>
-                            ya que usaremos algunos componentes de la misma. Cuando usamos Angular Material es muy importante tener en
-                            cuenta
-                            que necesitaremos tres módulos: @angular/material @angular/cdk @angular/animations. Puedes instalarlo vía npm.
+                            since we will use some components of it. When we use Angular Material it is very important to take into account
+                            keep in mind
+                            that we will need three modules: @angular/material @angular/cdk @angular/animations. You can install them via npm.
                         </article>
                         <article>
-                            Luego de esto podemos crear un proyecto nuevo o en su defecto, pueden descargar el repo que
-                            he desarrollado <a target="_blank" href="https://github.com/Alejandro04/Restaurants-Angular">AQUÍ</a> y seguir
-                            el tutorial para entender cada módulo.
-                            En caso de clonar, instalen las dependencias ejecutando npm install.
+                            After this we can create a new project or, failing that, you can download the repo that I have developed.
+                            I have developed <a target="_blank" href="https://github.com/Alejandro04/Restaurants-Angular">HERE</a> and follow
+                            the tutorial to understand each module.
+                            In case of cloning, install the dependencies by running npm install.
                         </article>
                         <article>
-                            Ahora si en cuanto al proyecto: Lo primero que debemos entender es el flow con el cual un proyecto de este tipo
-                            trabaja.
-                            En nuestro caso a nivel de front implantaremos los módulos de AngularFirestore para interactuar con Firestore
-                            como nuestra base de datos. Firestore es NoSQL y firebase nos ofrece su ecosistema para interactuar con él, lo
-                            que
-                            quiere decir que no tenemos la obligación de desarrollar un RestApi como backend. Existe la posibilidad de
-                            usar Firebase Functions que son funciones que ejecutan eventos dentro de firebase, pero eso lo veremos en los
-                            siguientes tutoriales.
+                            Now about the project: The first thing we must understand is the flow with which a project of this type works.
+                            works.
+                            In our case at the front end we will implement the AngularFirestore modules to interact with Firestore
+                            as our database. Firestore is NoSQL and firebase offers us its ecosystem to interact with it, what
+                            that
+                            means that we don't have the obligation to develop a RestApi as a backend. There is the possibility of
+                            Firebase Functions that are functions that execute events inside firebase, but we will see that in the following tutorials.
+                            following tutorials.
                         </article>
                         <article>
-                            Lo primero que debemos ver es nuestro archivo app.modules.ts donde vamos a configurar los módulos que
-                            vamos a usar de forma global en nuestro proyecto, esto incluye las funcionalidades de Angular Material. También
-                            vamos a configurar el acceso a Firebase. Para que puedas tener tus propias credenciales debes crear una cuenta
-                            en Firebase,
-                            después un proyecto y por último agregar Firestore al proyecto que creaste: Al llegar a este punto vas a
-                            encontrar un script
-                            con tus propios accesos. Por último debemos tener en cuenta los componentes que nosotros vamos a crear y usar
+                            The first thing we must see is our app.modules.ts file where we are going to configure the modules that we are going to use globally in our project.
+                            we are going to use globally in our project, this includes the Angular Material functionalities. Also
+                            we are going to configure the Firebase access. So that you can have your own credentials you must create an account
+                            in Firebase,
+                            then a project and finally add Firestore to the project you created.
+                            find a script
+                            with your own accesses. Finally we must take into account the components that we are going to create and use
                             (OrdersComponent,
                             OrdersListComponent,
                             MainMenuComponent,
@@ -64,7 +64,7 @@ export default function Post() {
                             </div>
                         </article>
                         <article>
-                            Los módulos los podemos crear con el siguiente comando:
+                            Modules can be created with the following command:
                             <span class="post-subtitle">
                                 ng g c ruta/componente
                             </span>
@@ -74,174 +74,176 @@ export default function Post() {
                             </span>
                         </article>
                         <article>
-                            Al ejecutar el comando para crear un componente, el mismo va generar 4 archivos por defecto:
+                            When executing the command to create a component, it will generate 4 files by default:
                             <span class="post-subtitle">
                                 component.component.css:
                             </span>
-                            Para escribir los estilos propios del componente.
+                            To write the component's own styles.
                             <span class="post-subtitle">
                                 component.component.html:
                             </span>
-                            Para escribir el maquetado del componente.
+                            To write the layout of the component.
                             <span class="post-subtitle">
                                 component.component.ts:
                             </span>
-                            Para escribir las funcionalidades del componente (es como un controlador)
+                            To write the functionalities of the component (it is like a controller)
+                            To write the layout of the component.
                             <span class="post-subtitle">
                                 component.component.spec.ts:
                             </span>
-                            Para escribir el test del componente.
+                            To write the component test.
                         </article>
                         <article>
-                            En nuestro caso queremos crear un componente que se encargue del menú. AngularMaterial nos ofrece un
-                            "skeleton" para configurar lo que necesitamos, solo debemos ejecutar: ng c main-menu. Nuestro componente
-                            va tener el siguiente html y ts por defecto. El html lo ajustamos a nuestras necesidades:
+                            In our case we want to create a component that takes care of the menu. AngularMaterial offers us a
+                            "skeleton to configure what we need, we just need to execute: ng c main-menu. Our component
+                            will have the following html and ts by default. We adjust the html to our needs:
                             <div class="img-post-container">
                                 <Image width="1200px" height="700px" src="/img/posts/introduccion_angular_firebase/3-min.jpg" alt="angular3" />
                             </div>
-                            Además, cabe destacar que en la linea 25 llamamos al contenido que se refleje en el renderizado, es decir,
-                            estamos frente a un "layout"
+                            In addition, it is worth noting that in line 25 we call the content to be reflected in the rendering, ie,
+                            we are in front of a "layout".
                         </article>
                         <article>
-                            Luego de ello vamos a configurar nuestro archivo app-routing.module.ts done nuestras rutas van acceder
-                            a nuestros componentes.
+                            After that we are going to configure our app-routing.module.ts file where our routes are going to access our components.
+                            to our components.
                             <div class="img-post-container">
                                 <Image width="1200px" height="700px" src="/img/posts/introduccion_angular_firebase/4-min.jpg" alt="angular4" />
                             </div>
                         </article>
                         <article>
-                            En Angular podemos llamar componentes dentro de componentes y pasarle propiedades, en este caso aplicaremos eso
-                            para home donde va llamar dentro de su componente a orders pero sin pasarle propiedades.
+                            In Angular we can call components inside components and pass properties to them, in this case we will apply that
+                            for home where you are going to call inside your component to orders but without passing properties.
                             <div class="img-post-container">
                                 <Image width="1200px" height="700px" src="/img/posts/introduccion_angular_firebase/5-min.jpg" alt="angular5" />
                             </div>
                         </article>
                         <article>
-                            Ahora si, vamos a entender el funcionamiento del proyecto en función de los datos: orders se va encargar de
-                            dibujar
-                            nuestra vista, agregando el titulo, el componente mat-accordion que nos permite dentro de él colocar
-                            otros componentes y desplegarlos o no. Dentro del mismo agregamos un formulario donde crearemos la orden y la
-                            lista
-                            de platos disponibles.
+                            Now, let's understand how the project works in terms of data: orders will be in charge of
+                            drawing
+                            our view, adding the title, the component mat-accordion that allows us to place inside it other components
+                            other components and display them or not. Inside the same we add a form where we will create the order and the
+                            list
+                            of available plates.
                             <div class="img-post-container">
                                 <Image width="1200px" height="700px" src="/img/posts/introduccion_angular_firebase/6-min.jpg" alt="angular6" />
                             </div>
-                            En la linea 5 pasamos a las propiedades del componente mat-accordion opened and closed unas funcionalidades
-                            que van a identificar cuando desplegar el acordión y cuando no. Dicha funcionalidad la aplica panelOpenState que
-                            está
-                            declarada en el "controlador" del componente.
+                            In line 5 we pass to the properties of the component mat-accordion opened and closed some functionalities that will identify when to deploy the accordion and when not to deploy it.
+                            that will identify when to deploy the accordion and when not to deploy it. This functionality is applied by panelOpenState which is
+                            is
+                            declared in the "controller" of the component.
                         </article>
                         <article>
-                            En la linea 14 vamos a listar los platos disponibles, donde mostraremos su nombre con un checkbox que, al hacer
+                            In line 14 we are going to list the available dishes, where we will show their name with a checkbox that, when clicking on
                             click,
-                            podemos agregar o no a un array que va contener la lista de platos que se agregarán a la orden.
+                            we can add or not to an array that will contain the list of dishes that will be added to the order.
                         </article>
                         <article>
-                            En la linea 36 vemos la función createOrder que se dispara cuando el usuario da click al botón Envíar,
-                            esto con una pequeña validación que nos asegure que todos los datos necesarios están listos: Ordén, cliente y
-                            por lo menos
-                            un producto.
+                            On line 36 we see the createOrder function that is triggered when the user clicks the Send button,
+                            this with a small validation to make sure that all the necessary data is ready: Order, customer and
+                            at least
+                            a product.
                         </article>
-                        <article>Este último punto es bien interesante porque nos encontramos con un comportamiento reactivo,
-                            dicho comportamiento se dá en este caso gracias a @angula/forms que permite instanciar los inputs
-                            que se van a usar en los formularios, es por ello que en las lineas 14, 23 y 29 se agregan las propiedades
-                            [formControl]="inputname" que termina de generar la reactividad.
+                        <article>This last point is very interesting because we are dealing with a reactive behavior,
+                            this behavior is given in this case thanks to @angula/forms that allows to instantiate the inputs that are going to be used in the forms.
+                            that are going to be used in the forms, that is why in lines 14, 23 and 29 we add the following properties
+                            [formControl]="inputname" that finishes generating the reactivity.
                         </article>
                         <article>
-                            Muy lindo todo pero, cómo funciona todo esto? veamos ahora nuestro controlador: Aquí llamamos AngularFirestore,
-                            Observable de rxjs y FormControl de @angular/forms. También configuramos nuestras interfaces de Plate y Orders.
-                            (si, interfaces, recuerden que estamos escribiendo en Typescript). Cuando el sistema crece es bueno crear una
-                            carpeta
-                            aparte y colocar allí las intefaces que necesitamos, entonces dentro de los controladores solo las llamamos.
+                            Very nice but how does it all work? let's see now our controller: Here we call AngularFirestore,
+                            Observable from rxjs and FormControl from @angular/forms. We also set up our Plate and Orders interfaces.
+                            (yes, interfaces, remember we are writing in Typescript). When the system grows it is good to create a
+                            folder
+                            separate folder and place there the interfaces we need, then inside the controllers we just call them.
                             <div class="img-post-container">
                                 <Image width="1200px" height="700px" src="/img/posts/introduccion_angular_firebase/7-min.jpg" alt="angular7" />
                             </div>
-                            El decorador @Component configura el selector del componente, el template y el archivo css que le pertenece a
-                            dicho componente.
+                            The @Component decorator configures the component selector, the template and the css file that belongs to that component.
+                            that component.
                         </article>
                         <article>
-                            Ahora, veamos la clase: Nuestras variables plates y orders deben ser tipo Observables ya que, AngularFirestore
-                            ve devolverle Observables
-                            (de nuevo, estamos escribiendo en Typescript, el tipado es esctricto y debe definirse correctamente). Tenemos
-                            también panelOpenState que maneja
-                            la visualización del acordión en el front, platesSelected es el array donde se van almacenar los platos
-                            seleccionados para crear la orden y
-                            title es el título de la vista.
+                            Now, let's look at the class: Our variables plates and orders must be of type Observables since, AngularFirestore
+                            will return Observables
+                            (again, we are writing in Typescript, the typing is strict and must be defined correctly). We have
+                            also panelOpenState which handles
+                            the display of the accordion on the front end, platesSelected is the array where the plates selected to create the
+                            selected to create the order and
+                            title is the title of the view.
                         </article>
                         <article>
-                            En nuestro constructor inyectamos AngularFirestore para poder acceder a sus propiedades dentro de la clase y
-                            también hacemos un "get" a firestore de las ordenes
-                            y los platos disponibles.
+                            In our constructor we inject AngularFirestore to be able to access its properties inside the class and we also do a "get" to firestore from the
+                            we also do a "get" to firestore of the orders and the available
+                            and the available plates.
                         </article>
                         <article>
-                            Tenemos dos funciones: addProduct(plate) que va agregar al array platesSelected el plato disponible y
-                            createOrder(order) que va crear la orden.
+                            We have two functions: addProduct(plate) which will add to the platesSelected array the available plate and
+                            createOrder(order) that will create the order.
                             <div class="img-post-container">
-                                <Image width="1200px" height="700px" src="/img/posts/introduccion_angular_firebase/8-min.jpg" alt="angular8" />
+                                <Image width="1200px" height="1000px" src="/img/posts/introduccion_angular_firebase/8-min.jpg" alt="angular8" />
                             </div>
-                            Nota: me falta validar que, cuando un usuario desselecciona un plato se actualice el array de platos
-                            seleccionados correctamente, acepto PR =)
+                            Note: I need to validate that, when a user deselects a dish, the array of correctly selected dishes is updated.
+                            correctly selected, I accept PR =)
                         </article>
                         <article>
-                            Ahora bien, ya teniendo claro nuestro contexto sabemos que nos hace falta algo, cuál es el componente que lista
-                            las ordenes? en la linea 43
-                            de orders.component.html verán lo siguiente:
+                            Now, having clear our context we know that we need something, which is the component that lists
+                            the orders? on line 43
+                            of orders.component.html you will see the following:
                             <div class="img-post-container">
                                 <Image width="1200px" height="700px" src="/img/posts/introduccion_angular_firebase/9-min.jpg" alt="angular9" />
                             </div>
-                            Aquí estamos llamando al componente app-orders-list y le estamos pasando la lista de ordenes que recibimos.
-                            Es decir, app-orders-list vendría siendo un child de orders.
+                            Here we are calling the app-orders-list component and we are passing it the list of orders we receive.
+                            That is to say, app-orders-list would be a child of orders.
+                            Now, having clear our context we know that we need something, which is the component that lists
                         </article>
                         <article>
-                            Ahora bien, veamos que se debe hacer en nuestro child componente (app-orders-list) para recibir dichos datos:
+                            Now, let's see what must be done in our child component (app-orders-list) to receive this data:
                             <div class="img-post-container">
                                 <Image width="1200px" height="700px" src="/img/posts/introduccion_angular_firebase/10-min.jpg" alt="angular10" />
                             </div>
-                            En la linea 10 vemos @Input orders: any[]; esta configuración permite recibir
-                            un array de ordenes del componente padre.
+                            In line 10 we see @Input orders: any[]; this configuration allows to receive an array of orders from the parent component.
+                            an array of orders from the parent component.
                         </article>
                         <article>
-                            También vale la pena destacar que, llamamos a MatTableModule (componente de Angular Material) para listar
-                            nuestras ordenes
-                            y ngOnChanges que va recibir dichas ordenes y las va pasar a la vista.
-                            displayedColumns es un array que guarda los headers de MatTableModule. Estos detalles pueden verlos
-                            en la docu de Angular Material.
+                            It is also worth noting that, we call MatTableModule (Angular Material component) to list
+                            our commands
+                            and ngOnChanges which will receive those commands and pass them to the view.
+                            displayedColumns is an array that stores the MatTableModule headers. These details can be found
+                            in the Angular Material documentation.
                         </article>
                         <article>
-                            Para finalizar, podemos ver el html de la lista de componentes:
+                            Finally, we can see the html of the component list:
                             <div class="img-post-container">
-                                <Image width="1200px" height="700px" src="/img/posts/introduccion_angular_firebase/11-min.jpg" alt="angular11" />
+                                <Image width="1200px" height="1000px" src="/img/posts/introduccion_angular_firebase/11-min.jpg" alt="angular11" />
                             </div>
                         </article>
                         <article>
-                            El resultado:
+                            The result:
                             <div class="img-post-container">
                                 <Image width="1200px" height="700px" src="/img/posts/introduccion_angular_firebase/12-min.jpg" alt="angular12" />
                             </div>
                         </article>
                         <article>
-                            Pueden ver el sistema en producción <a target="_blank" href="https://restaurants-angular.vercel.app/">AQUÍ</a>
+                            You can see the system in production <a target="_blank" href="https://restaurants-angular.vercel.app/">HERE</a>
                         </article>
                         <article>
-                            Existe otra sección donde manejamos los platos disponibles, pero creo que este post ya está un poco extenso,
-                            entonces
-                            es mejor que puedan estudiarlo y cualquier duda me pueden comentar.
+                            There is another section where we manage the available dishes, but I think this post is already a bit long,
+                            so
+                            it is better that you can study it and if you have any doubt you can comment me.
                         </article>
                         <article>
-                            En lo personal me gusta Angular, creo que es una herramienta muy buena para hacer front y que la decisión
-                            de usar esta u otras como React o Vue es tema de equipo, de proyecto, de empresa o de cliente.
+                            Personally I like Angular, I think it is a very good tool for front-end development and that the decision to use this or others like React or Vue is a matter of team, project, company or client.
+                            to use this or others like React or Vue is a matter of team, project, company or client.
                         </article>
                         <article>
-                            Recuerden, pueden clonar el proyecto <a target="_blank"
-                                href="https://github.com/Alejandro04/Restaurants-Angular">AQUÍ</a>
+                            Remember, you can clone the project <a target="_blank"
+                                href="https://github.com/Alejandro04/Restaurants-Angular">HERE</a>
                         </article>
                         <article>
-                            Espero que les sirva, saludos.
+                            I hope you find it useful, best regards.
                         </article>
                         <article>
-                            REFACTOR: Gracias a la recomendación de un amigo he realizado un pequeño refactor
-                            en el archivo app.module.ts donde anteriormente colocamos los datos de acceso a firebase,
-                            hemos quitado esto y lo agregamos en environment.ts ya que es la forma correcta.
+                            REFACTOR: Thanks to the recommendation of a friend I have made a little refactor
+                            in the app.module.ts file where we previously placed the firebase access data,
+                            we have removed this and added it in environment.ts since it is the correct way.
                             <div class="img-post-container">
                                 <Image width="1200px" height="700px" src="/img/posts/introduccion_angular_firebase/13-min.jpg" alt="angular13" />
                             </div>

@@ -177,7 +177,7 @@ export default function Post() {
                             Tenemos dos funciones: addProduct(plate) que va agregar al array platesSelected el plato disponible y
                             createOrder(order) que va crear la orden.
                             <div class="img-post-container">
-                                <Image width="1200px" height="700px" src="/img/posts/introduccion_angular_firebase/8-min.jpg" alt="angular8" />
+                                <Image width="1200px" height="1000px" src="/img/posts/introduccion_angular_firebase/8-min.jpg" alt="angular8" />
                             </div>
                             Nota: me falta validar que, cuando un usuario desselecciona un plato se actualice el array de platos
                             seleccionados correctamente, acepto PR =)
@@ -210,7 +210,7 @@ export default function Post() {
                         <article>
                             Para finalizar, podemos ver el html de la lista de componentes:
                             <div class="img-post-container">
-                                <Image width="1200px" height="700px" src="/img/posts/introduccion_angular_firebase/11-min.jpg" alt="angular11" />
+                                <Image width="1200px" height="1000px" src="/img/posts/introduccion_angular_firebase/11-min.jpg" alt="angular11" />
                             </div>
                         </article>
                         <article>
