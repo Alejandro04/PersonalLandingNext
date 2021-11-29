@@ -12,48 +12,47 @@ export default function Post() {
         <div className="post__container container">
           <section class="items-detail-container" id="post">
             <article>
-              Ngxs is a state management developed for Angular which contains a flow similar to redux.
+              Ngxs es un state management desarrollado para Angular el cual contiene un flow similar al de redux
             </article>
             <article>
-              Let's remember that a state handler is a tool that allows us to centralize the states of our applications, which facilitates the access to data without the need to be accessing
-              of our applications, which facilitates the access to the data without the need to be accessing them in a less fluid way.
-              This happens mostly when the application grows a lot.
-              Next I show the flow of data that applies, this image is courtesy of the official documentation of
-              Ngxs which you can access <a target="_blank" href="https://www.ngxs.io/">HERE</a>
+              Recordemos que un manejador de estados es una herramienta que nos permite centralizar los estados
+              de nuestras aplicaciones, lo cual facilita al acceso de los datos sin la necesidad de estar accediendo
+              a los mismos de formas pocas fluidas, esto sucede más que todo cuando la aplicación crece mucho.
+              A continuación muestro el flujo de datos que aplica, esta imágen es cortesía de la documentación oficial de
+              Ngxs el cual puedes acceder <a target="_blank" href="https://www.ngxs.io/">AQUÍ</a>
               <div class="img-post-container">
                 <Image src="/img/posts/ngxs/1-min.png" width="600px" height="300px" alt="ngxs1" />
               </div>
             </article>
             <article>
-              Analyzing the flow we find: From the component an action is triggered where it verifies with the backend or with plugins installed.
-              with the backend or with installed plugins the data to obtain, when it obtains it, it mutates it and passes it to the store.
-              to the store
-              and the store returns the new state to the component.
+              Analizando el flujo encontramos: Desde el componente se dispara una acción donde el mismo verifica
+              con el backend o con plugins instalados la data que debe obtener, cuando la obtiene muta la misma y se la pasa
+              al store
+              y el store devuelve el nuevo estado al componente.
             </article>
             <article>
-              Example: When we save data from a form, pressing the "save" button triggers the action that interacts with the entities (plugins, apis, others).
-              that interacts with the entities (plugins, apis, others) and when it obtains the response it sends it to the store and the store returns the new state (the list of data with the new data added).
-              returns the new state (the list of data with the new data added).
+              Ejemplo: Cuando guardamos datos desde un formulario, al presionar el botón "guardar" se dispara la acción
+              que interactura con las entidades (plugins, apis, otros) y al obtener la respuesta la envía al store y el store
+              devuelve el nuevo estado (la lista de datos con el nuevo dato agregado)
             </article>
             <article>
-              Let's see the example in code: Let's use the same project explained in the previous posts:
-              <a target="_blank" href="/posts/introduccion-angular-angularmaterial-firebase">Introduction to Angular</a>
+              Veamos en código el ejemplo: Vamos a usar el mismo proyecto explicado en los post anteriores:
+              <a target="_blank" href="/es/blog/introduccion-angular-angularmaterial-y-firebase">Introducción a Angular</a>
               y
-              <a target="_blank" href="/posts/inputs-y-outputs-en-angular">Inputs and Outputs</a>
-              Remembering that you can clone this project <a target="_blank"
-                href="https://github.com/Alejandro04/Restaurants-Angular">HERE</a>
+              <a target="_blank" href="/es/blog/inputs-y-outputs-en-angular">Inputs y Outputs</a>
+              Recordando que pueden clonar dicho proyecto <a target="_blank"
+                href="https://github.com/Alejandro04/Restaurants-Angular">AQUÍ</a>
             </article>
             <article>
-              We install our dependencies as follows:
+              Instalamos nuestras dependencias de la siguiente forma:
             </article>
             <article>
               npm install @ngxs/store --save
             </article>
             <article>
-              It is important that, in order for you to be able to verify
-              the behavior of the state at the time of development
-              install the following plugins:
-              We install our dependencies as follows:
+              Es importante que, para que puedas verificar
+              el comportamiento del estado al momento de desarrollar
+              instales los siguientes plugins:
             </article>
             <article>
               npm install @ngxs/devtools-plugin
@@ -62,31 +61,31 @@ export default function Post() {
               npm install @ngxs/logger-plugin
             </article>
             <article>
-              One thing I recommend is to install the Ngxs CLI which will save you a lot of time when developing.
-              development:
+              Algo que te recomiendo es instalar el CLI de Ngxs lo cual te va ahorrar mucho tiempo a la hora
+              de desarrollar:
               npm install @ngxs/cli -g
             </article>
             <article>
-              To implement Ngxs in our project we must configure it in app.module.ts as follows:
+              Para implementar Ngxs en nuestro proyecto debemos configurarlo en app.module.ts de la siguiente forma:
               <div class="img-post-container">
                 <Image width="1200px" height="700px" src="/img/posts/ngxs/9-min.png" alt="ngxs9" />
               </div>
             </article>
             <article>
-              In this project we are going to make the supplier crud which is going to be fed by a service,
-              we are not going to consume an API for agility reasons but we are going to encode the data in this service.
-              First of all we are going to build our state Management for providers: through the Ngxs CLI we execute:
+              En este proyecto vamos hacer el crud de proveedores el cual se va alimentar de un servicio,
+              no vamos a consumir un API por temas de agilidad pero vamos a harcodear los datos en dicho servicio.
+              Primero que nada vamos a construir nuestro state Management para providers: a través del CLI de Ngxs ejecutamos:
               ngxs --name providers --directory src
               <div class="img-post-container">
                 <Image width="1200px" height="700px" src="/img/posts/ngxs/2-min.png" alt="ngxs2" />
               </div>
             </article>
             <article>
-              This command has created the folder state inside src and contains: providers.action.ts which is in charge of
-              configure and
-              execute the actions that come from the components, providers.sate.spec.ts that is in charge of executing the tests
+              Este comando me ha creado la carpeta state dentro de src y contiene: providers.action.ts la cual se encarga de
+              configurar y
+              ejecutar las acciones que vienen de los componentes, providers.sate.spec.ts que se encarga de ejecutar los test
               y
-              and provider.state.ts which is in charge of configuring the states that each action manipulates.
+              y provider.state.ts que se encarga de configurar los estados que cada acción manipula.
             </article>
             <article>
               <span class="post-subtitle">
@@ -100,9 +99,9 @@ export default function Post() {
               </div>
             </article>
             <article>
-              The actions that we are going to execute are based on a crud and therefore we configure the
-              we configure the relevant functions for each item. Also in this case we call the interface
-              provider that our entity has defined.
+              Las acciones que vamos a ejecutar se basan en un crud y por ello
+              configuramos las funciones pertinentes a cada item. Además en este caso llamamos a la interfaz
+              provider que tiene definida nuestra entidad.
             </article>
             <article>
               <span class="post-subtitle">
@@ -113,67 +112,71 @@ export default function Post() {
               </div>
             </article>
             <article>
-              We import the modules we need from angular core, ngxs, the actions we have defined and the services we will use.
-              we have defined and the services we will use.
+              Importamos los módulos que necesitamos tanto del core de angular, de ngxs, las acciones
+              que hemos definido y los servicios que usaremos.
             </article>
             <article>
-              We see a ProviderStateModel class that will configure the initial state of our module,
-              in this case we have a Provider type array called providers and a string called selectedProvider (which we don't use throughout the tutorial
-              throughout the tutorial we don't use it,
-              but it can be used to take only an individual record and execute actions on that data).
+              Vemos una clase ProviderStateModel que va configurar el estado inicial de nuestro módulo,
+              en este caso tenemos un array tipo Provider llamado providers y un string llamado selectedProvider (que a lo
+              largo del tutorial no lo usamos,
+              pero que nos puede servir para tomar solamente un record individual y ejecutar acciones sobre dicho dato)
             </article>
             <article>
-              Below we see a @State decorator that is necessary for Angular to identify it and work on
-              functions that change the states correctly.
+              Más adelante vemos un decorador @State que es necesario para que el Angular lo identifique y trabaje sobre
+              las funciones que cambian los estados de forma correcta.
             </article>
             <article>
-              Then we configure our class, constructor and functions.
+              Luego configuramos nuestra clase, constructor y funciones.
               <div class="img-post-container">
                 <Image width="1200px" height="700px" src="/img/posts/ngxs/6-min.png" alt="ngxs6" />
               </div>
             </article>
             <article>
-              In the constructor we inject the service module that we are going to configure later, this service will interact
-              between the data
-              and the store.
+              En el constructor inyectamos el módulo de servicios que luego vamos a configurar, este servicio va interacturar
+              entre la data
+              y el store.
             </article>
             <article>
-              The @selector decoder is part of @ngxs/store and allows us to set up a "bridge" between
-              the state and the component, in this case we write a function getProviderList that is going to obtain the list of
-              of providers and that in the component we are going to call in a direct way.
+              El decordador @selector es parte de @ngxs/store y nos permite configurar un "puente" entre
+              el estado y el componente, en este caso escribimos una función getProviderList que va obtener la lista
+              de proveedores y que en el componente vamos a llamar de forma directa.
             </article>
             <article>
-              Then, we start writing our functions corresponding to each action (addProvider, UpdateProvider, DeleteProvider, GetProvider).
-              We will explain AddProvider.
+              Después, empezamos a escribir nuestras funciones correspondientes a cada acción (addProvider, UpdateProvider, DeleteProvider, GetProvider)
+              Explicaremos AddProvider.
             </article>
             <article>
               <span class="post-subtitle">
                 AddProvider:
               </span>
-              Ngxs allows to configure within its functions to handle the state features that are appropriate for each task, in this case it would be getState and patchState.
-              for each task, in this case it would be getState and patchState. Both allow us to manipulate the data (the payload) that comes from the action and to
-              from the action and configure the resulting new state through a context.
-              This context will receive an observable. That observable is the response of the service to which the payload is passed as a whole.
-              is passed the payload together with the ngxs features (getState and patchState).
+              Ngxs permite configurar dentro de sus funciones para manejar los estados features que son adecuados
+              para cada tarea, en este caso sería getState y patchState. Ambos nos permiten manipular la data (el payload) que viene
+              de la acción y configurar el nuevo estado resultante a través de un contexto.
+              Este contexto va recibir un observable. Ese observable es la respuesta del servicio a la cual
+              se le pasa el payload en conjunto con los features de ngxs (getState y patchState)
             </article>
             <article>
-              In addition, we see two additional functions: pipe and tap. Pipe allows you to group functions for later
-              and tap handles data reactively and returns an observable. The observable returned in this case
-              is the copy of the previous state and the payload of the new state, that is, the list of providers with the new data that was stored.
-              data that was stored.
+              Si, es un poco confuso al principio pero la clave para entender este proceso es ir
+              función por función y entender qué hace cada cosa.
+            </article>
+            <article>
+              Además, vemos dos funciones adicionales: pipe y tap. Pipe permite agrupar funciones para luego
+              ejecutarlas y tap maneja datos de forma reactiva y devuelve un observable. El observable que devuelve en este caso
+              es la copia del estado anterior y el payload del nuevo estado, es decir, la lista de providers con el nuevo
+              dato que se almacenó. Las demás funciones que manejan los estados para cada acción pueden verlas
               <a target="_blank" href="https://github.com/Alejandro04/Restaurants-Angular/blob/master/src/state/providers.state.ts">AQUÍ</a>
             </article>
             <article>
-              Already having our store configured we are going to create our service. The service is nothing more than functions that interact directly with our APIS or with harcoded data.
-              with our APIS or with harcoded data, as in this case:
+              Ya teniendo nuestro store configurado vamos a crear nuestro servicio. El servicio no es más que funciones que interactuan directamente
+              con nuestras APIS o con datos harcodeados, como en este caso:
               <div class="img-post-container">
                 <Image width="1200px" height="700px" src="/img/posts/ngxs/7-min.png" alt="ngxs7" />
               </div>
             </article>
             <article>
-              Now that we have our store and our service ready we go to the components, in this case we have created providers (parent) and providers-list (child)
-              which are going to exchange data through inputs and outputs. Remember that to understand these points you can go to
-              <a target="_blank" href="/posts/inputs-y-outputs-en-angular">PREVIOUS POST</a>
+              Ya teniendo nuestro store y nuestro servicio listo vamos a los componentes, en este caso hemos creado providers (padre) y providers-list (hijo)
+              los cuales van a intercambiar datos a través de inputs y outputs. Recuerda que para entender estos puntos puedes ir
+              al <a target="_blank" href="/posts/inputs-y-outputs-en-angular">POST ANTERIOR</a>
             </article>
             <article>
               <span class="post-subtitle">
@@ -182,36 +185,39 @@ export default function Post() {
               <div class="img-post-container">
                 <Image width="1200px" height="700px" src="/img/posts/ngxs/8-min.png" alt="ngxs8" />
               </div>
-              First we import the necessary modules (ngxs, services, actions, interface)
-              and then we configure our class. In the class we see the following on line 16:
+              Primero importamos los módulos necesarios (ngxs, servicios, acciones, interface)
+              y luego configuramos nuestra clase. En la clase vemos lo siguiente en la linea 16:
             </article>
             <article>
               <span class="post-subtitle">
                 @Select
               </span>
-              This decorator takes the state configured by @Selector of our provider.state.ts file from the store
-              and then manipulate it (send it to the template) and in our constructor in the line 19 we execute
-              the action that calls the list of providers. Rather, the action starts at line 19 and ends at line 16 when it goes through the whole process.
-              through the whole process. For the rest of the functions of the component the same thing happens, we execute a Dispatch and the new state will return the list of providers.
-              the new state will return the list of providers with the new data stored, you can see the file
+              Este decorador toma el estado configurado por @Selector de nuestro archivo provider.state.ts del store
+              para luego manipularlo (enviarlo al template) y en nuestro constructor en la linea 19 ejecutamos
+              la acción que llama a la lista de providers. Mejor dicho, la acción sale en la linea 19 y culmina en la linea 16 cuando pasa
+              por todo el proceso. Para el resto de las funciones del componente pasa lo mismo, ejecutamos un Dispatch y
+              el nuevo estado va devolver la lista de providers con el nuevo dato almacenado, pueden ver el archivo
               <a target="_blank" href="https://github.com/Alejandro04/Restaurants-Angular/blob/master/src/app/components/providers/providers.component.ts">AQUÍ </a>
             </article>
             <article>
-              Our template is almost the same as the ones we have seen, but it is worth mentioning that in line 32 we are sending to the child component the list of providers through the value providers$.
-              to the child component the list of providers through the value providers$
+              Nuestro template es casi igual a los que hemos visto pero cabe acotar que en la linea 32 le estamos envíando
+              al componente hijo la lista de providers a través del value providers$
               <div class="img-post-container">
                 <Image width="1200px" height="700px" src="/img/posts/ngxs/10-min.png" alt="ngxs10" />
               </div>
             </article>
             <article>
-              So, in summary: Ngxs allows us to have a store with a simple data flow: Components execute actions that iterate with services and
-              that return a new state. It is worth remembering that the templates and the ways of passing data between inputs and outputs is the same.
+              Entonces, en resumen: Ngxs nos permite tener un store con un flujo de datos simple: Componentes ejecutan acciones que iteran con los servicios y
+              que devuelve un nuevo estado. Cabe recordar que los templates y la formas de pasar datos entre inputs y outputs es igual.
             </article>
             <article>
-              You can see the system running <a target="_blank" href="https://restaurants-angular.vercel.app/">HERE</a>
+              Espero que les sirva y si, es confuso, lo importante es ir entendiendo los conceptos por separados y luego practicar.
             </article>
             <article>
-              Greetings!
+              Pueden ver el sistema corriendo <a target="_blank" href="https://restaurants-angular.vercel.app/">AQUÍ</a>
+            </article>
+            <article>
+              Saludos!
             </article>
           </section>
         </div>
