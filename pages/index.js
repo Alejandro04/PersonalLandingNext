@@ -78,6 +78,7 @@ export default function Home() {
               <div className="card__item">
                 <h3 className="card__title">Others</h3>
                 <p className="card__paragraph">Git</p>
+                <p className="card__paragraph">Mirth</p>
                 <p className="card__paragraph">Jira / Confluence</p>
                 <p className="card__paragraph">Project Lead</p>
               </div>

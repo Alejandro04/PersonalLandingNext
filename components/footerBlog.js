@@ -3,7 +3,7 @@ export default function FooterBlog() {
     <>
       <footer className="footer">
         <div className="footer__down">
-          © Copyright by 2021 Alejandro Roa
+          Copyright © 2021, Alejandro Roa
         </div>
       </footer>
     </>
