@@ -31,5 +31,13 @@
     "post_url": "/es/blog/inputs-y-outputs-en-angular",
     "description": "Pasar datos de componentes padres a hijos y de hijos a padres",
     "category": "Angular"
+  },
+  {
+    "id": 5,
+    "title": "Pruebas de accesibilidad en Angular",
+    "img_url": "/img/pc2.jpg",
+    "post_url": "/es/blog/pruebas-de-accesibilidad-en-angular",
+    "description": "Las pruebas de accesibilidad vienen a complementar los test unitarios a nivel de frontend",
+    "category": "Angular"
   }
 ]

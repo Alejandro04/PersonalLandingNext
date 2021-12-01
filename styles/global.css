@@ -504,6 +504,9 @@ body{
 .img-post-container img{
     width: 100%;
 }
+.post-subtitle{
+    font-weight: bold;
+}
 
 /*
     FORM CONTACT
