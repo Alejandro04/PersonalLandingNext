@@ -168,7 +168,7 @@ export default function Post() {
 
           <section class="hashtags-container">
             <div class="hashtag">#Jest-Axe</div>
-            <div class="hashtag">#Accesibility Test</div>
+            <div class="hashtag">#Accessibility Test</div>
             <div class="hashtag">#Angular</div>
           </section>
         </div>

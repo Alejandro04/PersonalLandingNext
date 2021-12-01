@@ -31,5 +31,13 @@
       "post_url": "/en/blog/inputs-and-outputs-in-angular",
       "description": "Passing data from parent to child and child to parent components",
       "category": "Angular"
+    },
+    {
+      "id": 5,
+      "title": "Accesibility test on Angular",
+      "img_url": "/img/pc2.jpg",
+      "post_url": "/en/blog/accessibility-test-on-angular",
+      "description": "Accessibility testing complements unit testing at the frontend level.",
+      "category": "Angular"
     }
   ]
