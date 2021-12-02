@@ -39,5 +39,13 @@
       "post_url": "/en/blog/accessibility-test-on-angular",
       "description": "Accessibility testing complements unit testing at the frontend level.",
       "category": "Angular"
+    },
+    {
+      "id": 6,
+      "title": "Tips for improving your javascript",
+      "img_url": "/img/pc2.jpg",
+      "post_url": "/en/blog/tips-for-improving-your-javascript",
+      "description": "Javascript is a very powerful language but, it has certain details that if we do not take into account we can make mistakes.",
+      "category": "Javascript"
     }
   ]
