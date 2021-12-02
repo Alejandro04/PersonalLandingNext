@@ -39,5 +39,13 @@
     "post_url": "/es/blog/pruebas-de-accesibilidad-en-angular",
     "description": "Las pruebas de accesibilidad vienen a complementar los test unitarios a nivel de frontend",
     "category": "Angular"
+  },
+  {
+    "id": 6,
+    "title": "Tips para mejorar tu javascript",
+    "img_url": "/img/pc2.jpg",
+    "post_url": "/es/blog/tips-para-mejorar-tu-javascript",
+    "description": "Javascript es un lenguaje muy poderoso pero, tiene ciertos detalles que si no tenemos en cuenta podemos cometer errores.",
+    "category": "Javascript"
   }
 ]
