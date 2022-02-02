@@ -41,14 +41,16 @@ export default function Home() {
                 I have seven years of experience like developer, i worked with companies of Latam, Spain and USA.
               </p>
               <p className="knowledge__paragraph">
-                I worked as a freelance at Workana.
+                I work as frontend developer and I want to improve my skills in backend and devOps.
               </p>
               <p className="knowledge__paragraph">
-                I like resolve problems of companies with tecnology, in this moment i working with a great team! yei!
+                I like resolve problems of companies with tecnology
               </p>
               <p className="knowledge__paragraph">
-                My specialties are : Javascript, React.js, Redux, Context, Thunk, Hooks, Next.js, Typescript, Angular, Jest,
-                Jest-axe, Flexbox, CssGrid, Node.js, Express.js, Nest.js, MongoDB, MySQL, PostgreSQL, AWS RDS.
+                I work with : Javascript, Typescript, Angular, React.js, Next.js, Jest, Jest-axe, Flexbox, CssGrid, Node.js, Express.js, Nest.js, Php, Laravel, MongoDB, MySQL, PostgreSQL.
+              </p>
+              <p className="knowledge__paragraph">
+                I am interested in learning Docker, AWS, C# and Solidity.
               </p>
             </div>
 
@@ -73,7 +75,7 @@ export default function Home() {
               <div className="card__item">
                 <h3 className="card__title">Databases</h3>
                 <p className="card__paragraph">MySql / PostgreSQL</p>
-                <p className="card__paragraph">MongoDB / Firestore</p>
+                <p className="card__paragraph">MongoDB</p>
               </div>
               <div className="card__item">
                 <h3 className="card__title">Others</h3>

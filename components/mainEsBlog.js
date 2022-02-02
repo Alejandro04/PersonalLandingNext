@@ -57,15 +57,15 @@ export default function MainBlog() {
             renderInput={(params) => <TextField {...params} label="Buscar por categorias" />}
           />
         </div>
-        <div className="blog__container">
+        <div className="blog-content">
           {dataFiltered && dataFiltered.map(post =>
             <div className="card-blog" key={post.id}>
               <a href={post.post_url}>
-                <Image src={post.img_url} alt="know" className="knowledge_img"
-                  width="800" height="600" />
+                <Image src={post.img_url} alt="know" className="blog-img"
+                  width="900" height="600" />
                 <div className="labels-container">
-                  <label className="labelPosts">{post.title}</label>
-                  <p className="labelPostsResume">
+                  <label className="label-posts">{post.title}</label>
+                  <p className="label-posts-resume">
                     {post.description}
                   </p>
                 </div>

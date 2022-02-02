@@ -7,45 +7,5 @@
       "description": "We must take into account four basic things, the architecture of the website, the tools to be used, the quality of the assets and the the technology to implement.",
       "category": "UI"
       
-    },
-    {
-      "id": 2,
-      "title": "State Management in Angular: Ngxs",
-      "img_url": "/img/pc2.jpg",
-      "post_url": "/en/blog/state-management-in-angular-ngxs",
-      "description": "A state handler similar to redux flow for Angular",
-      "category": "Angular"
-    },
-    {
-      "id": 3,
-      "title": "Introduction: Angular, AngularMaterial and Firebase",
-      "img_url": "/img/pc2.jpg",
-      "post_url": "/en/blog/introduction-angular-angularmaterial-and-firebase",
-      "description": "A good stack of tools to develop platforms",
-      "category": "Angular"
-    },
-    {
-      "id": 4,
-      "title": "Inputs and Outputs in Angular",
-      "img_url": "/img/pc2.jpg",
-      "post_url": "/en/blog/inputs-and-outputs-in-angular",
-      "description": "Passing data from parent to child and child to parent components",
-      "category": "Angular"
-    },
-    {
-      "id": 5,
-      "title": "Accesibility test on Angular",
-      "img_url": "/img/pc2.jpg",
-      "post_url": "/en/blog/accessibility-test-on-angular",
-      "description": "Accessibility testing complements unit testing at the frontend level.",
-      "category": "Angular"
-    },
-    {
-      "id": 6,
-      "title": "Tips for improving your javascript",
-      "img_url": "/img/pc2.jpg",
-      "post_url": "/en/blog/tips-for-improving-your-javascript",
-      "description": "Javascript is a very powerful language but, it has certain details that if we do not take into account we can make mistakes.",
-      "category": "Javascript"
     }
   ]
