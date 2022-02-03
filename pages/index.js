@@ -41,7 +41,7 @@ export default function Home() {
                 I have seven years of experience like developer, i worked with companies of Latam, Spain and USA.
               </p>
               <p className="knowledge__paragraph">
-                I work as frontend developer and I want to improve my skills in backend and devOps.
+                I work as frontend developer, but i can work in the backend too for colaborate with the team. 
               </p>
               <p className="knowledge__paragraph">
                 I like resolve problems of companies with tecnology
