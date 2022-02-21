@@ -47,10 +47,10 @@ export default function Home() {
                 I like resolve problems of companies with tecnology
               </p>
               <p className="knowledge__paragraph">
-                I work with : Javascript, Typescript, Angular, React.js, Next.js, Jest, Jest-axe, Flexbox, CssGrid, Node.js, Express.js, Nest.js, Php, Laravel, MongoDB, MySQL, PostgreSQL.
+              I work with : Javascript, Typescript, Angular, React.js, Next.js, Jest, Jest-axe, Flexbox, CssGrid, Node.js, Express.js, Nest.js, Php, Laravel, MongoDB, MySQL, PostgreSQL.
               </p>
               <p className="knowledge__paragraph">
-                I am interested in PWA, C# and Web3
+              I am interested in Gatsby, Pwa, React Native, Web3 and No-code platforms
               </p>
             </div>
 
