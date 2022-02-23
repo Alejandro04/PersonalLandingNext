@@ -36,7 +36,7 @@ export default function Home() {
         <section className="knowledge">
           <div className="knowledge__container container">
             <div className="knowledge__texts">
-              <h2 className="subtitle">Software Enginner</h2>
+              <h2 className="subtitle">Software Engineer</h2>
               <p className="knowledge__paragraph">
                 I have seven years of experience like developer, i worked with companies of Latam, Spain and USA.
               </p>
