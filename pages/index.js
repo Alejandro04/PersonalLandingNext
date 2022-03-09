@@ -50,7 +50,7 @@ export default function Home() {
               I work with : Javascript, Typescript, Angular, React.js, Next.js, Jest, Jest-axe, Flexbox, CssGrid, Node.js, Express.js, Nest.js, Php, Laravel, MongoDB, MySQL, PostgreSQL.
               </p>
               <p className="knowledge__paragraph">
-              I am interested in Gatsby, Pwa, React Native, Web3 and No-code platforms
+              I am interested in improve my english level.
               </p>
             </div>
 
