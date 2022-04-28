@@ -18,7 +18,7 @@ export default function HeaderBlog() {
             Software Engineer
           </p>
           <div className="headerImgContainer">
-            <Image width="100px" height="100px" className="headerImg" src="/img/meok.png"/>
+            <Image width="100px" height="100px" className="headerImg" src="/img/meok.jpg"/>
           </div>
           <a href="#main" className="cta">Learn more</a>
         </section>
